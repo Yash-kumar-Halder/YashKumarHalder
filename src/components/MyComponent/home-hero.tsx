@@ -32,25 +32,25 @@ const HomeHero = () => {
 	return (
 		<>
 			<div className="md:min-h-screen lg:pl-28 flex items-end md:items-center justify-center py-6">
-				<div className="md:h-full flex flex-col items-center md:items-start justify-center">
+				<div className="md:h-full flex flex-col items-center md:items-start justify-end md:justify-center">
 					<h1
-						className={`${russo_one.className} text-[5vmin] lg:text-[7vmin] leading-20`}
+						className={`${russo_one.className} text-[5vmin] lg:text-[7vmin] leading-8`}
 					>
 						Hi, <span className="text-red-800">I Am</span>
 					</h1>
 					<h1
-						className={`${russo_one.className} text-[9vmin] lg:text-[9vmin] leading-[7vmin] 
+						className={`${russo_one.className} text-[9vmin] lg:text-[9vmin] leading-[7.5vmin] 
               bg-gradient-to-r from-purple-700 to-red-700 bg-clip-text text-transparent text-center md:text-start`}
 					>
 						YASH KUMAR HALDER
 					</h1>
 					<h1
-						className={`${russo_one.className} text-[4vmin] lg:text-[4vmin] text-muted-foreground leading-[4vmin] `}
+						className={`${russo_one.className} text-[4vmin] lg:text-[4vmin] text-muted-foreground leading-[4vmin] mt-3 md:mt-0 `}
 					>
 						Full Stack Developer || MERN Stack
 					</h1>
-					<div className="w-[50%] h-12 mt-4 rounded-sm flex items-center justify-around">
-						<div className="flex items-center gap-1 bg-gray-600/20 border border-transparent hover:border-gray-500 px-4 py-2 rounded-sm hover:scale-105 cursor-pointer transition-all duration-150">
+					<div className="w-[90%] md:w-[50%] h-12 md:mt-4 rounded-sm flex items-center justify-center md:justify-around gap-2 md:gap-3 ">
+						<div className="flex items-center gap-1 bg-gray-600/20 border border-transparent hover:border-gray-500 px-3 md:px-4 py-0.5 md:py-2 rounded-sm hover:scale-105 cursor-pointer transition-all duration-150">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								x="0px"
@@ -58,6 +58,7 @@ const HomeHero = () => {
 								width="30"
 								height="30"
 								viewBox="0 0 48 48"
+								className="h-5 w-fit md:h-6"
 							>
 								<path
 									fill="#0078d4"
@@ -76,9 +77,11 @@ const HomeHero = () => {
 									d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"
 								></path>
 							</svg>
-							<h3>LINKEDIN</h3>
+							<h3 className="text-[10px] md:text-base">
+								LINKEDIN
+							</h3>
 						</div>
-						<div className="flex items-center gap-1 bg-gray-600/20 border border-transparent hover:border-gray-500 px-4 py-2 rounded-sm hover:scale-105 cursor-pointer transition-all duration-150">
+						<div className="flex items-center gap-1 bg-gray-600/20 border border-transparent hover:border-gray-500 px-3 md:px-4 py-0.5 md:py-2 rounded-sm hover:scale-105 cursor-pointer transition-all duration-150">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								x="0px"
@@ -86,19 +89,19 @@ const HomeHero = () => {
 								width="30"
 								height="30"
 								viewBox="0 0 64 64"
-								className=" dark:fill-white"
+								className=" dark:fill-white h-5 md:h-6 w-fit"
 							>
 								<path d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"></path>
 							</svg>
-							<h3>GITHUB</h3>
+							<h3 className="text-[10px] md:text-base">GITHUB</h3>
 						</div>
-						<div className="flex items-center gap-1 bg-gray-600/20 border border-transparent hover:border-gray-500 px-4 py-2 rounded-sm hover:scale-105 cursor-pointer transition-all duration-150">
+						<div className="flex items-center gap-1 md:gap-3 bg-gray-600/20 border border-transparent hover:border-gray-500 px-3 md:px-4 py-1 md:py-2 rounded-sm hover:scale-105 cursor-pointer transition-all duration-150">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								enableBackground="new 0 0 24 24"
 								viewBox="0 0 24 24"
 								id="leetcode"
-								className="w-[27px] "
+								className="h-4 w-fit md:h-6 "
 							>
 								<path
 									fill="#B3B1B0"
@@ -133,10 +136,12 @@ const HomeHero = () => {
 									d="M14.432,0c-0.01,0-0.021,0-0.031,0c-0.189,0.004-0.379,0.049-0.562,0.132c-0.178,0.081-0.349,0.2-0.504,0.356c-3.208,3.214-6.416,6.43-9.623,9.644c-0.31,0.31-0.604,0.634-0.839,1.004c-0.652,1.025-0.966,2.151-0.954,3.262h2.818c-0.026-0.753,0.248-1.506,0.827-2.102c1.402-1.442,2.842-2.849,4.265-4.272c0.111-0.119,0.261-0.189,0.372-0.305c0.849-0.889,1.737-1.742,2.6-2.619c0.083-0.084,0.177-0.159,0.221-0.273c0.002-0.005,0.003-0.009,0.005-0.014c0.77-0.775,1.54-1.549,2.31-2.325c0.604-0.61,0.637-1.503,0.077-2.065C15.133,0.14,14.786,0,14.432,0L14.432,0z"
 								></path>
 							</svg>
-							<h3>LEETCODE</h3>
+							<h3 className="text-[10px] md:text-base">
+								LEETCODE
+							</h3>
 						</div>
 					</div>
-					<div className="absolute w-[50vw] h-screen -top-10 left-[59%] rotate-20 ">
+					{/* <div className="absolute w-[50vw] h-screen -top-10 left-[59%] rotate-20 ">
 						<svg
 							viewBox="0 0 600 800"
 							fill="none"
@@ -217,18 +222,19 @@ const HomeHero = () => {
 								}}
 							/>
 						</svg>
-					</div>
+					</div> */}
 				</div>
 			</div>
-			<div className="md:min-h-screen flex items-start md:items-center justify-center py-6">
-				<div className="w-120 p-16 px-24 grid grid-cols-2 gap-3 group">
-					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-sm group-hover:rounded-sm rounded-br-4xl cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110">
-						<div className="w-32 aspect-square flex items-center justify-center ">
-							<FaReact
-								size={90}
-								className="animate-spin animation-duration-[10s] fill-cyan-400"
-							/>
-						</div>
+			<div className="h-[30vh] md:min-h-screen flex items-start md:items-center justify-center py-6">
+				<div className="w-{20%] p-10 md:p-[30%] aspect-auto grid grid-cols-2 gap-3 group">
+					<div className="relative aspect-square bg-gray-200 dark:bg-gray-900 rounded-sm group-hover:rounded-sm rounded-br-4xl cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110">
+						<Image
+							src="/react.png"
+							width="300"
+							height="300"
+							alt="Image"
+							className="w-32"
+						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
 							React JS
 						</span>
