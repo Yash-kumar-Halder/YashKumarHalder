@@ -1,7 +1,13 @@
-import React from "react";
+import NavigationBar from "@/components/MyComponent/navigation-bar";
+import HomePage from "./home/home";
 
-const LandingPage = () => {
-	return <div className="container px-8 pt-18">Landing Page</div>;
+const MainPage = () => {
+	return (
+			<main className="w-full h-full">
+				<NavigationBar />
+				<HomePage />
+			</main>
+	);
 };
 
-export default LandingPage;
+export default MainPage;

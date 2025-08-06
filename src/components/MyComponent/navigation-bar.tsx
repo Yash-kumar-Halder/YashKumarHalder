@@ -3,8 +3,17 @@
 import React, { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
+import { Menu, Moon, Sun } from "lucide-react";
 import Link from "next/link";
+import { SidebarTrigger } from "../ui/sidebar";
+import {
+	Sheet,
+	SheetContent,
+	SheetDescription,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger,
+} from "@/components/ui/sheet";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -20,20 +29,22 @@ const NavigationBar = () => {
 
 	return (
 		<div
-			className={`${inter.className} w-[100%] flex items-center justify-between px-8 py-2 fixed top-0 shadow-sm`}
+			className={`${inter.className} w-[95%] md:w-[70%] flex items-center justify-between px-8 py-2 fixed top-2 left-1/2 transform -translate-x-1/2 shadow-sm dark:bg-[#242424c0] backdrop-blur-sm rounded-sm z-[99] `}
 		>
 			<div className="h-full items-center justify-center">
-				<h1 className="font-bold text-lg">
-					<span className="text-red-600">Y</span>ASH{" "}
-					<span className="text-red-600"> K</span>UMAR
-				</h1>
+				<Link href="/">
+					<h1 className="font-bold text-md md:text-lg hover:tracking-wider transition-all duration-200">
+						<span className="text-red-600">Y</span>ASH{" "}
+						<span className="text-red-600"> K</span>UMAR
+					</h1>
+				</Link>
 			</div>
 			<div className="flex items-center justify-end gap-3 h-full font-medium text-sm">
-				<div className="flex items-center gap-8">
+				<div className="md:flex items-center gap-4 md:gap-8 hidden">
 					<Link className="hover:text-orange-400" href="/project">
 						Projects
 					</Link>
-					<Link className="hover:text-orange-400" href="/aout">
+					<Link className="hover:text-orange-400" href="/about">
 						About
 					</Link>
 					<Link className="hover:text-orange-400" href="/contact">
@@ -46,8 +57,22 @@ const NavigationBar = () => {
 						setTheme(theme === "dark" ? "light" : "dark");
 					}}
 				>
-					{theme === "dark" ? <Sun /> : <Moon />}
+					{mounted && (theme === "dark" ? <Sun size={18} /> : <Moon size={18} />)}
 				</button>
+
+				<Sheet>
+					<SheetTrigger className="md:hidden"><Menu /></SheetTrigger>
+					<SheetContent className="md:hidden">
+						<SheetHeader>
+							<SheetTitle>Are you absolutely sure?</SheetTitle>
+							<SheetDescription>
+								This action cannot be undone. This will
+								permanently delete your account and remove your
+								data from our servers.
+							</SheetDescription>
+						</SheetHeader>
+					</SheetContent>
+				</Sheet>
 			</div>
 		</div>
 	);
