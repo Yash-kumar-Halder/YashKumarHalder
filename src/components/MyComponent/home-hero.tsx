@@ -34,7 +34,7 @@ const HomeHero = () => {
 			<div className="md:min-h-screen lg:pl-28 flex items-end md:items-center justify-center py-6">
 				<div className="md:h-full flex flex-col items-center md:items-start justify-end md:justify-center">
 					<h1
-						className={`${russo_one.className} text-[5vmin] lg:text-[7vmin] leading-8`}
+						className={`${russo_one.className} text-[5vmin] lg:text-[7vmin] leading-8 md:leading-12`}
 					>
 						Hi, <span className="text-red-800">I Am</span>
 					</h1>
@@ -226,7 +226,7 @@ const HomeHero = () => {
 				</div>
 			</div>
 			<div className="h-[30vh] md:min-h-screen flex items-start md:items-center justify-center py-6">
-				<div className="w-{20%] p-10 md:p-[30%] aspect-auto grid grid-cols-2 gap-3 group">
+				<div className="w-{20%] px-20 md:p-[15%] lg:p-[30%] aspect-auto grid grid-cols-2 gap-3 group">
 					<div className="relative aspect-square bg-gray-200 dark:bg-gray-900 rounded-sm group-hover:rounded-sm rounded-br-4xl cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110">
 						<Image
 							src="/react.png"
