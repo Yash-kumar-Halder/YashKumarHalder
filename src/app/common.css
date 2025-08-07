@@ -1,0 +1,15 @@
+.text-gradient-red-purple {
+  background: linear-gradient(90deg, #ff0000, #ff0000, #3336ea, #3336ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-teal-green {
+  background: linear-gradient(90deg, #00e297, #0003b1, #0003b1, #1200b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-teal-green {
+  background: linear-gradient(90deg, #00e297, #0003b1, #0003b1, #1200b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

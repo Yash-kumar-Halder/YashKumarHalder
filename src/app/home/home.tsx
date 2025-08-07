@@ -1,8 +1,6 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Russo_One, Inter } from "next/font/google";
-import Image from "next/image";
-import { FaReact } from "react-icons/fa";
 import HomeHero from "@/components/MyComponent/home-hero";
 
 const russo_one = Russo_One({
@@ -17,7 +15,7 @@ const inter = Inter({
 const HomePage = () => {
 	return (
 		<div
-			className={`${inter.className} w-[100%] min-h-screen px-8 grid grid-cols-1 md:grid-cols-[1.3fr_0.7fr] overflow-hidden relative`}
+			className={`${inter.className} w-full min-h-screen px-8 grid grid-cols-1 md:grid-cols-[1.3fr_0.7fr] overflow-hidden relative`}
 		>
 			<HomeHero />
 		</div>

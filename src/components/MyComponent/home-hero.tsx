@@ -34,12 +34,12 @@ const HomeHero = () => {
 			<div className="md:min-h-screen lg:pl-28 flex items-end md:items-center justify-center py-6">
 				<div className="md:h-full flex flex-col items-center md:items-start justify-end md:justify-center">
 					<h1
-						className={`${russo_one.className} text-[5vmin] lg:text-[7vmin] leading-8 md:leading-12`}
+						className={`${russo_one.className} text-[10vmin] lg:text-[7vmin] leading-[10vmin] md:leading-14`}
 					>
 						Hi, <span className="text-red-800">I Am</span>
 					</h1>
 					<h1
-						className={`${russo_one.className} text-[9vmin] lg:text-[9vmin] leading-[7.5vmin] 
+						className={`${russo_one.className} text-[12vmin] lg:text-[9vmin] leading-[9vmin] lg:leading-[7.5vmin] md:mt-4 
               bg-gradient-to-r from-purple-700 to-red-700 bg-clip-text text-transparent text-center md:text-start`}
 					>
 						YASH KUMAR HALDER
@@ -227,49 +227,49 @@ const HomeHero = () => {
 			</div>
 			<div className="h-[30vh] md:min-h-screen flex items-start md:items-center justify-center py-6">
 				<div className="w-{20%] px-20 md:p-[15%] lg:p-[30%] aspect-auto grid grid-cols-2 gap-3 group">
-					<div className="relative aspect-square bg-gray-200 dark:bg-gray-900 rounded-sm group-hover:rounded-sm rounded-br-4xl cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110">
+					<div className="relative aspect-square bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-br-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
 						<Image
 							src="/react.png"
 							width="300"
 							height="300"
 							alt="Image"
-							className="w-32"
+							className="w-24 object-contain group-hover:mb-3 transition-all  duration-200"
 						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
 							React JS
 						</span>
 					</div>
-					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-sm group-hover:rounded-sm rounded-bl-4xl cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:translate-x-3 group-hover:-translate-y-3 hover:scale-110">
+					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-bl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
 						<Image
 							src="/vs-code.png"
 							width="300"
 							height="300"
 							alt="Image"
-							className="w-32"
+							className="w-32 object-contain group-hover:mb-3 transition-all  duration-200"
 						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
 							React JS
 						</span>
 					</div>
-					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-sm group-hover:rounded-sm rounded-tr-4xl cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:-translate-x-3 group-hover:translate-y-3 hover:scale-110">
+					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-tr-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:-translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center aspect-square">
 						<Image
-							src="/react.png"
+							src="/tailwind.png"
 							width="300"
 							height="300"
 							alt="Image"
-							className="w-32"
+							className="w-32 object-contain group-hover:mb-1 transition-all  duration-200"
 						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
 							React JS
 						</span>
 					</div>
-					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-sm group-hover:rounded-sm rounded-tl-4xl cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:translate-x-3 group-hover:translate-y-3 hover:scale-110">
+					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-tl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center">
 						<Image
-							src="/react.png"
+							src="/python.png"
 							width="300"
 							height="300"
 							alt="Image"
-							className="w-32"
+							className="w-20 object-contain group-hover:mb-3 transition-all  duration-200"
 						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
 							React JS

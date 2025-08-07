@@ -29,7 +29,7 @@ const NavigationBar = () => {
 
 	return (
 		<div
-			className={`${inter.className} w-[95%] md:w-[70%] flex items-center justify-between px-8 py-2 fixed top-2 left-1/2 transform -translate-x-1/2 shadow-sm dark:bg-[#242424c0] backdrop-blur-sm rounded-sm z-[99] `}
+			className={`${inter.className} bg-[#ffffff80] w-[95%] md:w-[70%] flex items-center justify-between px-8 py-2 fixed top-2 left-1/2 transform -translate-x-1/2 shadow-sm dark:bg-[#242424c0] backdrop-blur-sm rounded-sm z-[50] `}
 		>
 			<div className="h-full items-center justify-center">
 				<Link href="/">
