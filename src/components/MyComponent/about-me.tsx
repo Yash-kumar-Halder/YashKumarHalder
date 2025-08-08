@@ -1,6 +1,6 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import { CellsIcon, CommandIcon, GithubIcon, Linkedin02Icon, School01FreeIcons, SourceCodeSquareIcon } from "@hugeicons/core-free-icons";
-import { Merienda, Permanent_Marker, Cabin_Sketch, Amarante } from "next/font/google";
+import { Merienda, Cabin_Sketch, Amarante } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import { CircleArrowRight } from "lucide-react";
@@ -9,10 +9,6 @@ const merienda = Merienda({
 	subsets: ["latin"],
 });
 const sabin_sketch = Cabin_Sketch({
-	subsets: ["latin"],
-	weight: "400",
-});
-const permanent_marker = Permanent_Marker({
 	subsets: ["latin"],
 	weight: "400",
 });
@@ -55,14 +51,14 @@ const AboutMe = () => {
 								YASH KUMAR HALDER
 							</h3>
 							<p className="text-xs  pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
-								I'm a passionate Frontend Developer with a
+								I&apos;m a passionate Frontend Developer with a
 								strong foundation in HTML, CSS, JavaScript, and
 								React. Currently exploring backend technologies
 								like Node.js and MongoDB to become a full-stack
 								developer. I love building clean, user-friendly
 								web applications and constantly strive to
 								improve my skills through projects and daily
-								learning. Let's build something amazing
+								learning. Let&apos;s build something amazing
 								together.
 							</p>
 						</div>
@@ -84,16 +80,17 @@ const AboutMe = () => {
 								A FULL STACK WEB DEVELOPMENT INTERNSHIP
 							</h3>
 							<p className="text-xs pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
-								I'm a dedicated Full Stack Web Developer with a
-								strong grasp of HTML, CSS, JavaScript, React,
-								and backend technologies. In January 2025, I
-								completed a one-month Full Stack Web Development
-								internship with PHP at Databits Technologia,
-								where I gained practical experience in building
-								dynamic and responsive web applications. I'm
-								passionate about writing clean, efficient code
-								and continuously improving my skills to deliver
-								impactful digital solutions.
+								I&apos;m a dedicated Full Stack Web Developer
+								with a strong grasp of HTML, CSS, JavaScript,
+								React, and backend technologies. In January
+								2025, I completed a one-month Full Stack Web
+								Development internship with PHP at Databits
+								Technologia, where I gained practical experience
+								in building dynamic and responsive web
+								applications. I&apos;m passionate about writing
+								clean, efficient code and continuously improving
+								my skills to deliver impactful digital
+								solutions.
 							</p>
 						</div>
 					</div>

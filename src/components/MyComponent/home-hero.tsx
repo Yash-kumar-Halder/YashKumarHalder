@@ -2,7 +2,6 @@
 import { Russo_One } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { FaReact } from "react-icons/fa";
 
 const russo_one = Russo_One({
 	subsets: ["latin"],

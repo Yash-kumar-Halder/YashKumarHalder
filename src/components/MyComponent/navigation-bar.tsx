@@ -5,7 +5,6 @@ import { Inter } from "next/font/google";
 import { useTheme } from "next-themes";
 import { Menu, Moon, Sun } from "lucide-react";
 import Link from "next/link";
-import { SidebarTrigger } from "../ui/sidebar";
 import {
 	Sheet,
 	SheetContent,
