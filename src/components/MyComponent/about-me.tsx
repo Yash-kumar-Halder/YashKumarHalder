@@ -50,17 +50,17 @@ const AboutMe = () => {
 							<h3 className="text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
 								YASH KUMAR HALDER
 							</h3>
-							<p className="text-xs  pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
-								I&apos;m a passionate Frontend Developer with a
+							<span className="text-xs leading-0 pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
+								I am a passionate Frontend Developer with a
 								strong foundation in HTML, CSS, JavaScript, and
 								React. Currently exploring backend technologies
 								like Node.js and MongoDB to become a full-stack
 								developer. I love building clean, user-friendly
 								web applications and constantly strive to
 								improve my skills through projects and daily
-								learning. Let&apos;s build something amazing
+								learning. Let's build something amazing
 								together.
-							</p>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -79,15 +79,15 @@ const AboutMe = () => {
 							<h3 className="text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
 								A FULL STACK WEB DEVELOPMENT INTERNSHIP
 							</h3>
-							<p className="text-xs pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
-								I&apos;m a dedicated Full Stack Web Developer
+							<p className="text-xs pb-4 mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
+								I am a dedicated Full Stack Web Developer
 								with a strong grasp of HTML, CSS, JavaScript,
 								React, and backend technologies. In January
 								2025, I completed a one-month Full Stack Web
 								Development internship with PHP at Databits
 								Technologia, where I gained practical experience
 								in building dynamic and responsive web
-								applications. I&apos;m passionate about writing
+								applications. I am passionate about writing
 								clean, efficient code and continuously improving
 								my skills to deliver impactful digital
 								solutions.

@@ -1,12 +1,8 @@
 "use client";
 import React from "react";
-import { Russo_One, Inter } from "next/font/google";
 import HomeHero from "@/components/MyComponent/home-hero";
+import { Inter } from "next/font/google";
 
-const russo_one = Russo_One({
-	subsets: ["latin"],
-	weight: "400",
-});
 const inter = Inter({
 	subsets: ["latin"],
 	weight: "600",
