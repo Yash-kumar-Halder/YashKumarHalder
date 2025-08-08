@@ -1,9 +1,7 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { CellsIcon, CommandIcon, GithubIcon, Linkedin02Icon, School01FreeIcons, SourceCodeSquareIcon } from "@hugeicons/core-free-icons";
 import { Merienda, Cabin_Sketch, Amarante } from "next/font/google";
 import Image from "next/image";
 import React from "react";
-import { CircleArrowRight } from "lucide-react";
+import { Boxes, CircleArrowRight, Github, GraduationCap, Linkedin, School, Slack, SquareChartGantt } from "lucide-react";
 
 const merienda = Merienda({
 	subsets: ["latin"],
@@ -40,10 +38,7 @@ const AboutMe = () => {
 						<h2
 							className={`${sabin_sketch.className} flex items-center gap-2 text-[6vmin] text-emerald-700`}
 						>
-							<HugeiconsIcon
-								icon={SourceCodeSquareIcon}
-								className="w-[6vmin] h-[6vmin] "
-							/>
+							<Boxes className="w-[6vmin] h-[6vmin] " />
 							SELF-SUMMARY
 						</h2>
 						<div className="w-full h-full">
@@ -64,15 +59,12 @@ const AboutMe = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[2fr_1.3fr] items-center gap-4">
+				<div className="w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[2fr_1.5fr] items-center gap-4">
 					<div className="w-full h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<h2
 							className={`${sabin_sketch.className} text-[6vmin] flex items-center gap-2 text-orange-700`}
 						>
-							<HugeiconsIcon
-								icon={CellsIcon}
-								className="w-[6vmin] h-[6vmin] "
-							/>
+							<SquareChartGantt className="w-[6vmin] h-[6vmin] " />
 							INTERNSHIP
 						</h2>
 						<div className="w-full h-full">
@@ -80,26 +72,28 @@ const AboutMe = () => {
 								A FULL STACK WEB DEVELOPMENT INTERNSHIP
 							</h3>
 							<p className="text-xs pb-4 mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
-								I am a dedicated Full Stack Web Developer
-								with a strong grasp of HTML, CSS, JavaScript,
-								React, and backend technologies. In January
-								2025, I completed a one-month Full Stack Web
-								Development internship with PHP at Databits
-								Technologia, where I gained practical experience
-								in building dynamic and responsive web
-								applications. I am passionate about writing
-								clean, efficient code and continuously improving
-								my skills to deliver impactful digital
-								solutions.
+								I am a dedicated Full Stack Web Developer with a
+								strong grasp of HTML, CSS, JavaScript, React,
+								and backend technologies. In January 2025, I
+								completed a one-month Full Stack Web Development
+								internship with PHP at Databits Technologia,
+								where I gained practical experience in building
+								dynamic and responsive web applications. I am
+								passionate about writing clean, efficient code
+								and continuously improving my skills to deliver
+								impactful digital solutions.
 							</p>
 						</div>
 					</div>
-					<div className="h-full px-8 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 hover:scale-[1.02] transition-all duration-200 ">
-						<h2
-							className={`${sabin_sketch.className} text-[6vmin] flex items-center gap-2 text-purple-800`}
-						>
-							DIPLOMA IN CST
-						</h2>
+					<div className="h-full px-8 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 hover:scale-[1.02] transition-all duration-200 text-purple-800">
+						<div className="flex items-center gap-2">
+							<GraduationCap size={50} />
+							<h2
+								className={`${sabin_sketch.className} text-[6vmin] flex items-center gap-2 `}
+							>
+								DIPLOMA IN CST
+							</h2>
+						</div>
 						<div className="w-full h-full">
 							<h3 className="text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70 ">
 								BEHALA GOVERNMENT POOLYTECHNIC
@@ -121,26 +115,17 @@ const AboutMe = () => {
 					<div className="about-card-bg-image h-full px-8 pt-8 pb-4 flex flex-col gap-5 items-start justify-start rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<div className="w-full h-full bg-linear-to-r from-[#b8b8b81c] to-[#00000083] border border-[#202020] rounded-3xl overflow-hidden flex items-center justify-center gap-6 px-5 hover:border-gray-700">
 							<div className="w-[30%] bg-linear-120 from-[#6d6d6d4f] to-[#0000003d] border border-[#242424] flex items-center justify-center rounded-full aspect-square cursor-pointer hover:-rotate-12 transition-all duration-150 hover:scale-105">
-								<HugeiconsIcon
-									icon={Linkedin02Icon}
-									className="fill-muted stroke-muted stroke-0"
-								/>
+								<Linkedin className="fill-muted stroke-muted stroke-0" />
 							</div>
 							<div className="w-[30%] bg-linear-120 from-[#6d6d6d4f] to-[#0000003d] border border-[#242424] flex items-center justify-center rounded-full aspect-square cursor-pointer hover:-rotate-12 transition-all duration-150 hover:scale-105">
-								<HugeiconsIcon
-									icon={GithubIcon}
-									className="fill-muted stroke-muted stroke-0"
-								/>
+								<Github className="fill-muted stroke-muted stroke-0" />
 							</div>
 						</div>
 						<div className="w-full flex items-center justify-between">
 							<h2
 								className={`${amarante.className} text-[3vmin] leading-[3vmin] flex items-center gap-3 text-white`}
 							>
-								<HugeiconsIcon
-									icon={CommandIcon}
-									className="w-[3vmin] h-[3vmin]  "
-								/>
+								<Slack className="w-[3vmin] h-[3vmin]  " />
 								SOCIAL
 							</h2>
 
@@ -182,10 +167,7 @@ const AboutMe = () => {
 						<h2
 							className={`${sabin_sketch.className} text-[3vmin] flex items-center gap-2 text-teal-500`}
 						>
-							<HugeiconsIcon
-								icon={School01FreeIcons}
-								className="w-[3vmin] h-[3vmin] stroke-2 "
-							/>
+							<School className="w-[3vmin] h-[3vmin] stroke-2 " />
 							HIGHER SECONDARY
 						</h2>
 						<div className="w-full h-full">

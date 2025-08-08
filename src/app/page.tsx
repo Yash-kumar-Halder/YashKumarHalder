@@ -1,7 +1,7 @@
 import NavigationBar from "@/components/MyComponent/navigation-bar";
 import HomePage from "./home/home";
 import TechStack from "@/components/MyComponent/Tech-Stack";
-// import AboutMe from "@/components/MyComponent/about-me";
+import AboutMe from "@/components/MyComponent/about-me";
 
 const MainPage = () => {
 	return (
@@ -9,7 +9,7 @@ const MainPage = () => {
 			<NavigationBar />
 			<HomePage />
 			<TechStack />
-			{/* <AboutMe /> */}
+			<AboutMe />
 		</main>
 	);
 };
