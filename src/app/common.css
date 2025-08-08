@@ -8,8 +8,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.text-gradient-teal-green {
-  background: linear-gradient(90deg, #00e297, #0003b1, #0003b1, #1200b1);
+.text-gradient-cyan-purple {
+  background: linear-gradient(90deg, cyan, cyan, rgb(192, 0, 192), rgb(255, 0, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+  .about-card-bg-image {
+    background-image: url("https://i.pinimg.com/1200x/fe/28/b4/fe28b44637096c37233370477dec95b5.jpg");
+    background-size: cover;
+    filter: brightness(0.7);
+  }

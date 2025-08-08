@@ -12,51 +12,57 @@ const permanent_marker = Permanent_Marker({
 
 const languages = [
 	{
-		imageUrl: "/react.png",
+		imageUrl: "/html.png",
 		title: "HTML",
 		description: "Hypertext Murkup Language",
 	},
 	{
-		imageUrl: "/react.png",
-		title: "HTML",
+		imageUrl: "/CSS.png",
+		title: "CSS",
+		description: "Hypertext Murkup Language",
+	},
+	{
+		imageUrl: "/js.jpeg",
+		title: "JAVASCRIPT",
 		description: "Hypertext Murkup Language",
 	},
 	{
 		imageUrl: "/react.png",
-		title: "HTML",
+		title: "REACT JS",
 		description: "Hypertext Murkup Language",
 	},
 	{
-		imageUrl: "/react.png",
-		title: "HTML",
+		imageUrl: "/nodejs.png",
+		title: "NODE JS",
+		description: "Hypertext Murkup Language",
+	},
+
+	{
+		imageUrl: "/mongodb.svg",
+		title: "MONGODB",
 		description: "Hypertext Murkup Language",
 	},
 	{
-		imageUrl: "/react.png",
-		title: "HTML",
+		imageUrl: "/java.png",
+		title: "JAVA",
 		description: "Hypertext Murkup Language",
 	},
 	{
-		imageUrl: "/react.png",
-		title: "HTML",
+		imageUrl: "/python.png",
+		title: "PYTHON",
 		description: "Hypertext Murkup Language",
 	},
 	{
-		imageUrl: "/react.png",
-		title: "HTML",
-		description: "Hypertext Murkup Language",
-	},
-	{
-		imageUrl: "/react.png",
-		title: "HTML",
+		imageUrl: "/c.png",
+		title: "C LANGUAGE",
 		description: "Hypertext Murkup Language",
 	},
 ];
 
 const tools = [
 	{
-		imageUrl: "/git.png",
-		title: "GIT",
+		imageUrl: "/vs-code.png",
+		title: "VS CODE",
 		description: "Version Controll System",
 	},
 	{
@@ -65,77 +71,19 @@ const tools = [
 		description: "Version Controll System",
 	},
 	{
-		imageUrl: "/git.png",
-		title: "GIT",
+		imageUrl: "/postman-img.png",
+		title: "POSTMAN",
 		description: "Version Controll System",
 	},
 	{
-		imageUrl: "/git.png",
-		title: "GIT",
+		imageUrl: "/tailwind.png",
+		title: "TAILWIND CSS",
 		description: "Version Controll System",
 	},
 	{
-		imageUrl: "/git.png",
-		title: "GIT",
+		imageUrl: "/threejs.png",
+		title: "THREE JS",
 		description: "Version Controll System",
-	},
-	{
-		imageUrl: "/git.png",
-		title: "GIT",
-		description: "Version Controll System",
-	},
-	{
-		imageUrl: "/git.png",
-		title: "GIT",
-		description: "Version Controll System",
-	},
-	{
-		imageUrl: "/git.png",
-		title: "GIT",
-		description: "Version Controll System",
-	},
-];
-
-const otherTeches = [
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
-	},
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
-	},
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
-	},
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
-	},
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
-	},
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
-	},
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
-	},
-	{
-		imageUrl: "/java.png",
-		title: "Java",
-		description: "Library",
 	},
 ];
 
@@ -161,25 +109,13 @@ const TechStack = () => {
 			</div>
 			<div className="mt-14">
 				<h2
-					className={`${permanent_marker.className} text-[5vmin] text-muted-foreground`}
+					className={`${permanent_marker.className} text-gradient-teal-green text-[5vmin] text-muted-foreground`}
 				>
 					Essential Tools I Use
 				</h2>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
 					{tools.map((tool) => (
 						<TechCard {...tool} key={tool.title} />
-					))}
-				</div>
-			</div>
-			<div className="mt-14">
-				<h2
-					className={`${permanent_marker.className} text-[5vmin] text-muted-foreground`}
-				>
-					Essential Tools I Use
-				</h2>
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-					{otherTeches.map((tech) => (
-						<TechCard {...tech} key={tech.title} />
 					))}
 				</div>
 			</div>
