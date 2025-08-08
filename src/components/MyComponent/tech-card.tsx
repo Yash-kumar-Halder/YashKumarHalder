@@ -15,7 +15,7 @@ const TechCard = ({ imageUrl, title, description }: TechCardProps) => {
 					src={imageUrl}
 					width={80}
 					height={80}
-					alt="image"
+					alt={title}
 					className="w-10 rounded-lg"
 				/>
 			</div>

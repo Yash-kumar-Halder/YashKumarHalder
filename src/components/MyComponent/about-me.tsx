@@ -6,7 +6,7 @@ import { Boxes, CircleArrowRight, Github, GraduationCap, Linkedin, School, Slack
 const merienda = Merienda({
 	subsets: ["latin"],
 });
-const sabin_sketch = Cabin_Sketch({
+const cabin_sketch = Cabin_Sketch({
 	subsets: ["latin"],
 	weight: "400",
 });
@@ -36,7 +36,7 @@ const AboutMe = () => {
 					</div>
 					<div className="w-full h-full px-8 py-2 md:pb-2 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<h2
-							className={`${sabin_sketch.className} flex items-center gap-2 text-[6vmin] text-emerald-700`}
+							className={`${cabin_sketch.className} flex items-center gap-2 text-[6vmin] text-emerald-700`}
 						>
 							<Boxes className="w-[6vmin] h-[6vmin] " />
 							SELF-SUMMARY
@@ -46,7 +46,7 @@ const AboutMe = () => {
 								YASH KUMAR HALDER
 							</h3>
 							<span className="text-xs inline-block leading-[18px] pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
-								I am a passionate Frontend Developer with a
+								{`I am a passionate Frontend Developer with a
 								strong foundation in HTML, CSS, JavaScript, and
 								React. Currently exploring backend technologies
 								like Node.js and MongoDB to become a full-stack
@@ -54,7 +54,7 @@ const AboutMe = () => {
 								web applications and constantly strive to
 								improve my skills through projects and daily
 								learning. Let's build something amazing
-								together.
+								together.`}
 							</span>
 						</div>
 					</div>
@@ -62,7 +62,7 @@ const AboutMe = () => {
 				<div className="w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[2fr_1.5fr] items-center gap-4">
 					<div className="w-full h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<h2
-							className={`${sabin_sketch.className} text-[6vmin] flex items-center gap-2 text-orange-700`}
+							className={`${cabin_sketch.className} text-[6vmin] flex items-center gap-2 text-orange-700`}
 						>
 							<SquareChartGantt className="w-[6vmin] h-[6vmin] " />
 							INTERNSHIP
@@ -89,7 +89,7 @@ const AboutMe = () => {
 						<div className="flex items-center gap-2">
 							<GraduationCap size={50} />
 							<h2
-								className={`${sabin_sketch.className} text-[6vmin] flex items-center gap-2 `}
+								className={`${cabin_sketch.className} text-[6vmin] flex items-center gap-2 `}
 							>
 								DIPLOMA IN CST
 							</h2>
@@ -146,7 +146,7 @@ const AboutMe = () => {
 						<h2
 							className={`${amarante.className} text-[6vmin] leading-[4.5vmin] flex items-center dark:text-gray-300`}
 						>
-							Let's
+							{`Let's`}
 						</h2>
 						<div className="w-full  flex items-center justify-between">
 							<h2
@@ -165,7 +165,7 @@ const AboutMe = () => {
 					</div>
 					<div className=" h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<h2
-							className={`${sabin_sketch.className} text-[3vmin] flex items-center gap-2 text-teal-500`}
+							className={`${cabin_sketch.className} text-[3vmin] flex items-center gap-2 text-teal-500`}
 						>
 							<School className="w-[3vmin] h-[3vmin] stroke-2 " />
 							HIGHER SECONDARY

@@ -14,78 +14,78 @@ const languages = [
 	{
 		imageUrl: "/html.png",
 		title: "HTML",
-		description: "Hypertext Murkup Language",
+		description: "Hypertext Markup Language",
 	},
 	{
 		imageUrl: "/CSS.png",
 		title: "CSS",
-		description: "Hypertext Murkup Language",
+		description: "Cascading Style Sheets",
 	},
 	{
 		imageUrl: "/js.jpeg",
-		title: "JAVASCRIPT",
-		description: "Hypertext Murkup Language",
+		title: "JavaScript",
+		description: "Programming language for web development",
 	},
 	{
 		imageUrl: "/react.png",
-		title: "REACT JS",
-		description: "Hypertext Murkup Language",
+		title: "React JS",
+		description: "JavaScript library for building UIs",
 	},
 	{
 		imageUrl: "/nodejs.png",
-		title: "NODE JS",
-		description: "Hypertext Murkup Language",
+		title: "Node.js",
+		description: "JavaScript runtime for backend development",
 	},
-
 	{
 		imageUrl: "/mongodb.svg",
-		title: "MONGODB",
-		description: "Hypertext Murkup Language",
+		title: "MongoDB",
+		description: "NoSQL document database",
 	},
 	{
 		imageUrl: "/java.png",
-		title: "JAVA",
-		description: "Hypertext Murkup Language",
+		title: "Java",
+		description: "Object-oriented programming language",
 	},
 	{
 		imageUrl: "/python.png",
-		title: "PYTHON",
-		description: "Hypertext Murkup Language",
+		title: "Python",
+		description: "High-level general-purpose programming language",
 	},
 	{
 		imageUrl: "/c.png",
-		title: "C LANGUAGE",
-		description: "Hypertext Murkup Language",
+		title: "C Language",
+		description: "Low-level procedural programming language",
 	},
 ];
 
 const tools = [
 	{
 		imageUrl: "/vs-code.png",
-		title: "VS CODE",
-		description: "Version Controll System",
+		title: "VS Code",
+		description: "Code editor by Microsoft",
 	},
 	{
 		imageUrl: "/git.png",
-		title: "GIT",
-		description: "Version Controll System",
+		title: "Git",
+		description: "Version control system",
 	},
 	{
 		imageUrl: "/postman-img.png",
-		title: "POSTMAN",
-		description: "Version Controll System",
+		title: "Postman",
+		description: "API testing tool",
 	},
 	{
 		imageUrl: "/tailwind.png",
-		title: "TAILWIND CSS",
-		description: "Version Controll System",
+		title: "Tailwind CSS",
+		description: "Utility-first CSS framework",
 	},
 	{
 		imageUrl: "/threejs.png",
-		title: "THREE JS",
-		description: "Version Controll System",
+		title: "Three.js",
+		description: "3D JavaScript library",
 	},
 ];
+
 
 const TechStack = () => {
   return (

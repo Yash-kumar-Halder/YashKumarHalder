@@ -14,8 +14,10 @@
   -webkit-text-fill-color: transparent;
 }
 
-  .about-card-bg-image {
-    background-image: url("https://i.pinimg.com/1200x/fe/28/b4/fe28b44637096c37233370477dec95b5.jpg");
-    background-size: cover;
-    filter: brightness(0.7);
-  }
+.about-card-bg-image {
+  background-image: url("https://i.pinimg.com/1200x/fe/28/b4/fe28b44637096c37233370477dec95b5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+}
