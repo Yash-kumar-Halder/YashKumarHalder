@@ -50,7 +50,7 @@ const AboutMe = () => {
 							<h3 className="text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
 								YASH KUMAR HALDER
 							</h3>
-							<span className="text-xs leading-0 pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
+							<span className="text-xs inline-block leading-[18px] pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
 								I am a passionate Frontend Developer with a
 								strong foundation in HTML, CSS, JavaScript, and
 								React. Currently exploring backend technologies
