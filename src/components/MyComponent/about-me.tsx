@@ -1,7 +1,16 @@
 import { Merienda, Cabin_Sketch, Amarante } from "next/font/google";
 import Image from "next/image";
 import React from "react";
-import { Boxes, CircleArrowRight, Github, GraduationCap, Linkedin, School, Slack, SquareChartGantt } from "lucide-react";
+import {
+	Boxes,
+	CircleArrowRight,
+	Github,
+	GraduationCap,
+	Linkedin,
+	School,
+	Slack,
+	SquareChartGantt,
+} from "lucide-react";
 
 const merienda = Merienda({
 	subsets: ["latin"],
@@ -24,7 +33,7 @@ const AboutMe = () => {
 				ABOUT ME
 			</h1>
 			<div>
-				<div className="w-[70%] mt-10 mx-auto grid grid-cols-1 md:grid-cols-[1.3fr_2fr] items-center gap-4">
+				<div className="w-[90%] md:w-[70%] mt-10 mx-auto grid grid-cols-1 md:grid-cols-[1.3fr_2fr] items-center gap-4">
 					<div className="bg-gray-600/20 h-full p-0 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<Image
 							src="/img-3.jpg"
@@ -42,7 +51,7 @@ const AboutMe = () => {
 							SELF-SUMMARY
 						</h2>
 						<div className="w-full h-full">
-							<h3 className="text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
+							<h3 className="text-[3.5vmin] md:text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
 								YASH KUMAR HALDER
 							</h3>
 							<span className="text-xs inline-block leading-[18px] pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
@@ -59,7 +68,7 @@ const AboutMe = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[2fr_1.5fr] items-center gap-4">
+				<div className="w-[90%] md:w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[2fr_1.5fr] items-center gap-4">
 					<div className="w-full h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<h2
 							className={`${cabin_sketch.className} text-[6vmin] flex items-center gap-2 text-orange-700`}
@@ -68,7 +77,7 @@ const AboutMe = () => {
 							INTERNSHIP
 						</h2>
 						<div className="w-full h-full">
-							<h3 className="text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
+							<h3 className="text-[3.5vmin] md:text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
 								A FULL STACK WEB DEVELOPMENT INTERNSHIP
 							</h3>
 							<p className="text-xs pb-4 mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
@@ -85,9 +94,9 @@ const AboutMe = () => {
 							</p>
 						</div>
 					</div>
-					<div className="h-full px-8 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 hover:scale-[1.02] transition-all duration-200 text-purple-800">
+					<div className="h-full px-8 py-2 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 hover:scale-[1.02] transition-all duration-200 text-purple-800">
 						<div className="flex items-center gap-2">
-							<GraduationCap size={50} />
+							<GraduationCap className="w-[7vmin] h-[7vmin] md:w-[3vmin] md:h-[3vmin] " />
 							<h2
 								className={`${cabin_sketch.className} text-[6vmin] flex items-center gap-2 `}
 							>
@@ -95,7 +104,7 @@ const AboutMe = () => {
 							</h2>
 						</div>
 						<div className="w-full h-full">
-							<h3 className="text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70 ">
+							<h3 className="text-[3.5vmin] md:text-[2.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70 ">
 								BEHALA GOVERNMENT POOLYTECHNIC
 							</h3>
 							<p className="text-xs pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400  ">
@@ -111,7 +120,7 @@ const AboutMe = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr_1.2fr] items-center gap-4">
+				<div className="w-[90%] md:w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr_1.2fr] items-center gap-4">
 					<div className="about-card-bg-image h-full px-8 pt-8 pb-4 flex flex-col gap-5 items-start justify-start rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<div className="w-full h-full bg-linear-to-r from-[#b8b8b81c] to-[#00000083] border border-[#202020] rounded-3xl overflow-hidden flex items-center justify-center gap-6 px-5 hover:border-gray-700">
 							<div className="w-[30%] bg-linear-120 from-[#6d6d6d4f] to-[#0000003d] border border-[#242424] flex items-center justify-center rounded-full aspect-square cursor-pointer hover:-rotate-12 transition-all duration-150 hover:scale-105">
@@ -123,9 +132,9 @@ const AboutMe = () => {
 						</div>
 						<div className="w-full flex items-center justify-between">
 							<h2
-								className={`${amarante.className} text-[3vmin] leading-[3vmin] flex items-center gap-3 text-white`}
+								className={`${amarante.className} text-[7vmin] md:text-[3vmin] leading-[3vmin] flex items-center gap-3 text-white`}
 							>
-								<Slack className="w-[3vmin] h-[3vmin]  " />
+								<Slack className="w-[7vmin] h-[7vmin] md:w-[3vmin] md:h-[3vmin]  " />
 								SOCIAL
 							</h2>
 
@@ -141,7 +150,7 @@ const AboutMe = () => {
 							width={300}
 							height={300}
 							alt="image"
-							className="absolute top-0 right-10 w-48"
+							className="absolute w-32 top-0 right-10 md:w-48"
 						/>
 						<h2
 							className={`${amarante.className} text-[6vmin] leading-[4.5vmin] flex items-center dark:text-gray-300`}
@@ -165,13 +174,13 @@ const AboutMe = () => {
 					</div>
 					<div className=" h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<h2
-							className={`${cabin_sketch.className} text-[3vmin] flex items-center gap-2 text-teal-500`}
+							className={`${cabin_sketch.className} text-[6vmin] md:text-[3vmin] flex items-center gap-2 text-teal-500`}
 						>
-							<School className="w-[3vmin] h-[3vmin] stroke-2 " />
+							<School className="w-[7vmin] h-[7vmin] md:w-[3vmin] md:h-[3vmin] stroke-2 " />
 							HIGHER SECONDARY
 						</h2>
 						<div className="w-full h-full">
-							<h3 className="text-[1.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
+							<h3 className="text-[3.5vmin] md:text-[1.4vmin] font-bold text-gray-950/70 dark:text-gray-50/70">
 								JYOTIRMOY BASU VOCATIONAL CENTER
 							</h3>
 							<p className="text-xs pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
