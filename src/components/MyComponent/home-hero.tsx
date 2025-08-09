@@ -140,93 +140,11 @@ const HomeHero = () => {
 							</h3>
 						</div>
 					</div>
-					{/* <div className="absolute w-[50vw] h-screen -top-10 left-[59%] rotate-20 ">
-						<svg
-							viewBox="0 0 600 800"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							className="w-full h-auto"
-						>
-							<defs>
-								<linearGradient
-									id="lineGradient"
-									x1="0"
-									y1="0"
-									x2="100%"
-									y2="100%"
-								>
-									<stop offset="0%" stopColor="#7f5af0" />
-									<stop offset="100%" stopColor="#2cb67d" />
-								</linearGradient>
-							</defs>
-
-							<path
-								ref={pathRef1}
-								d="M100 800 
-				   C 100 600, 300 600, 300 500
-				   S 100 400, 200 300
-				   S 400 300, 350 150
-				   S 200 100, 300 0"
-								stroke="url(#lineGradient)"
-								strokeWidth="2"
-								fill="none"
-								strokeLinecap="round"
-								style={{
-									strokeDasharray: "1500",
-									strokeDashoffset: "1500",
-									transition: "none",
-								}}
-							/>
-						</svg>
-					</div>
-					<div className="absolute w-[50vw] h-screen left-[54%] top-[10%] rotate-180 ">
-						<svg
-							viewBox="0 0 800 800"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							className="w-full h-auto"
-						>
-							<defs>
-								<linearGradient
-									id="lineGradient"
-									x1="0"
-									y1="0"
-									x2="100%"
-									y2="100%"
-								>
-									<stop offset="0%" stopColor="#7f5af0" />
-									<stop offset="100%" stopColor="#2cb67d" />
-								</linearGradient>
-							</defs>
-
-							<path
-								ref={pathRef2}
-								d="
-      M 50 700 
-      C 100 600, 200 600, 250 500
-      S 350 400, 300 300
-      S 100 250, 300 200
-      S 600 250, 500 100
-      S 350 50, 700 0
-    "
-								stroke="url(#lineGradient)"
-								strokeWidth="1.4"
-								fill="none"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								style={{
-									strokeDasharray: "1500",
-									strokeDashoffset: "1500",
-									transition: "none",
-								}}
-							/>
-						</svg>
-					</div> */}
 				</div>
 			</div>
 			<div className="h-[30vh] md:min-h-screen flex items-start md:items-center justify-center py-6">
 				<div className="w-{20%] px-20 md:p-[15%] lg:p-[30%] aspect-auto grid grid-cols-2 gap-3 group">
-					<div className="relative aspect-square bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-br-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
+					<div className="relative aspect-square bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-br-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
 						<Image
 							src="/react.png"
 							width="300"
@@ -238,7 +156,7 @@ const HomeHero = () => {
 							React JS
 						</span>
 					</div>
-					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-bl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
+					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-bl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
 						<Image
 							src="/vs-code.png"
 							width="300"
@@ -250,7 +168,7 @@ const HomeHero = () => {
 							React JS
 						</span>
 					</div>
-					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-tr-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:-translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center aspect-square">
+					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-tr-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:-translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center aspect-square">
 						<Image
 							src="/tailwind.png"
 							width="300"
@@ -262,7 +180,7 @@ const HomeHero = () => {
 							React JS
 						</span>
 					</div>
-					<div className="relative bg-gray-200 dark:bg-gray-900 rounded-[24%] rounded-tl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center">
+					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-tl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center">
 						<Image
 							src="/python.png"
 							width="300"

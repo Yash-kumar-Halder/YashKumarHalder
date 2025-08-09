@@ -120,8 +120,8 @@ const AboutMe = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-[90%] md:w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr_1.2fr] items-center gap-4">
-					<div className="about-card-bg-image h-full px-8 pt-8 pb-4 flex flex-col gap-5 items-start justify-start rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
+				<div className="w-[90%] md:w-[70%] mt-4 mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr_1.2fr] direction-rtl items-center gap-4">
+					<div className="order-3 sm:order-1 about-card-bg-image h-full px-8 pt-8 pb-4 flex flex-col gap-5 items-start justify-start rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<div className="w-full h-full bg-linear-to-r from-[#b8b8b81c] to-[#00000083] border border-[#202020] rounded-3xl overflow-hidden flex items-center justify-center gap-6 px-5 hover:border-gray-700">
 							<div className="w-[30%] bg-linear-120 from-[#6d6d6d4f] to-[#0000003d] border border-[#242424] flex items-center justify-center rounded-full aspect-square cursor-pointer hover:-rotate-12 transition-all duration-150 hover:scale-105">
 								<Linkedin className="fill-muted stroke-muted stroke-0" />
@@ -144,7 +144,7 @@ const AboutMe = () => {
 							/>
 						</div>
 					</div>
-					<div className="h-full px-8 py-6 pb-4 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 flex flex-col items-start justify-end relative overflow-hidden hover:scale-[1.02] transition-all duration-200 ">
+					<div className="order-2 sm:order-2 h-full px-8 py-6 pb-4 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 flex flex-col items-start justify-end relative overflow-hidden hover:scale-[1.02] transition-all duration-200 ">
 						<Image
 							src="/bg-illustration.png"
 							width={300}
@@ -172,7 +172,7 @@ const AboutMe = () => {
 							/>
 						</div>
 					</div>
-					<div className=" h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
+					<div className="order-1 sm:order-3 h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<h2
 							className={`${cabin_sketch.className} text-[6vmin] md:text-[3vmin] flex items-center gap-2 text-teal-500`}
 						>

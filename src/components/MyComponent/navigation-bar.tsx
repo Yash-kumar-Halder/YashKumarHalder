@@ -20,6 +20,7 @@ const inter = Inter({
 	display: "swap",
 });
 
+
 const NavigationBar = () => {
 	const { theme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
