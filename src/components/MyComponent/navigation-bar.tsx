@@ -29,9 +29,9 @@ const NavigationBar = () => {
 
 	return (
 		<div
-			className={`${inter.className} bg-[#ffffff80] w-[95%] md:w-[70%] flex items-center justify-between px-8 py-2 fixed top-2 left-1/2 transform -translate-x-1/2 shadow-sm dark:bg-[#242424c0] backdrop-blur-sm rounded-sm z-[50] `}
+			className={`${inter.className} bg-[#ffffff80] w-[95%] h-10 md:w-[70%] flex items-center justify-between px-8 py-0.5 fixed top-2 left-1/2 transform -translate-x-1/2 shadow-sm dark:bg-[#242424c0] backdrop-blur-sm rounded-sm z-[50] `}
 		>
-			<div className="h-full items-center justify-center">
+			<div className="h-full flex items-center justify-center">
 				<Link href="/">
 					<h1 className="font-bold text-md md:text-lg hover:tracking-wider transition-all duration-200">
 						<span className="text-red-600">Y</span>ASH{" "}
@@ -40,14 +40,20 @@ const NavigationBar = () => {
 				</Link>
 			</div>
 			<div className="flex items-center justify-end gap-3 h-full font-medium text-sm">
-				<div className="md:flex items-center gap-4 md:gap-8 hidden">
-					<Link className="hover:text-orange-400" href="/project">
+				<div className="md:flex items-center gap-1 md:gap-2 hidden h-full">
+					<Link className="hover:text-orange-400 h-full px-4 content-center" href="/">
+						Home
+					</Link>
+					<Link className="hover:text-orange-400 h-full px-4 content-center" href="/projects">
 						Projects
 					</Link>
-					<Link className="hover:text-orange-400" href="/about">
+					<Link className="hover:text-orange-400 h-full px-4 content-center" href="/tech">
+						Tech
+					</Link>
+					<Link className="hover:text-orange-400 h-full px-4 content-center" href="/about">
 						About
 					</Link>
-					<Link className="hover:text-orange-400" href="/contact">
+					<Link className="hover:text-orange-400 h-full px-4 content-center" href="/contact">
 						Contact
 					</Link>
 				</div>
