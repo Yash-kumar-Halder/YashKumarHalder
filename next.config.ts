@@ -2,13 +2,19 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-   images: {
+  images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'i.pinimg.com',
-        port: '', // leave empty for default
-        pathname: '/**', // match all paths
+        protocol: "https",
+        hostname: "i.pinimg.com",
+        port: "", // leave empty for default
+        pathname: "/**", // match all paths
+      },
+      {
+        protocol: "https",
+        hostname: "leetcard.jacoblin.cool",
+        port: "",
+        pathname: "/**",
       },
     ],
   },

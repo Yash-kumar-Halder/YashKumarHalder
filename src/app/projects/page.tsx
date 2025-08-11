@@ -110,8 +110,7 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr] min-h-[400px] gap-6  justify-center">
+        
           <div className="bg-gray-600/30 h-fit p-4 pt-8 pb-12 rounded-2xl relative hover:scale-[1.02] transition-all duration-200 shadow-2xl border border-gray-300 dark:border-gray-800 hover:border-gray-700 hover:dark:border-gray-500 ">
             <Image
               src={
@@ -202,9 +201,9 @@ const Projects = () => {
               <Link href={"https://github.com"}>
                 <Github className="bg-black stroke-white dark:bg-white p-0.5 rounded-sm w-12 px-3 dark:stroke-black border border-gray-400 dark:border-black" />{" "}
               </Link>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
