@@ -124,10 +124,10 @@ const AboutMe = () => {
 					<div className="order-3 sm:order-1 about-card-bg-image h-full px-8 pt-8 pb-4 flex flex-col gap-5 items-start justify-start rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
 						<div className="w-full h-full bg-linear-to-r from-[#b8b8b81c] to-[#00000083] border border-[#202020] rounded-3xl overflow-hidden flex items-center justify-center gap-6 px-5 hover:border-gray-700">
 							<div className="w-[30%] bg-linear-120 from-[#6d6d6d4f] to-[#0000003d] border border-[#242424] flex items-center justify-center rounded-full aspect-square cursor-pointer hover:-rotate-12 transition-all duration-150 hover:scale-105">
-								<Linkedin className="fill-muted stroke-muted stroke-0" />
+								<Linkedin className="stroke-muted stroke-0 fill-muted dark:fill-muted-foreground focus:fill-blue-500" />
 							</div>
 							<div className="w-[30%] bg-linear-120 from-[#6d6d6d4f] to-[#0000003d] border border-[#242424] flex items-center justify-center rounded-full aspect-square cursor-pointer hover:-rotate-12 transition-all duration-150 hover:scale-105">
-								<Github className="fill-muted stroke-muted stroke-0" />
+								<Github className="fill-muted dark:fill-muted-foreground stroke-muted stroke-0" />
 							</div>
 						</div>
 						<div className="w-full flex items-center justify-between">

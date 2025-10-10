@@ -1,8 +1,6 @@
 import React from "react";
 import { Roboto } from "next/font/google";
-import { Progress } from "../ui/progress";
 import CircularProgress from "./circle-progressbar";
-import ProgressBar from "./progress-bar";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -33,7 +31,7 @@ async function getStats() {
   const res = await fetch(
     `https://leetcode-stats-api.herokuapp.com/Yash_kumar321`,
     {
-      next: { revalidate: 3600 }, // re-fetch every 1 hour
+      next: { revalidate: 3600 },
     }
   );
   if (!res.ok) throw new Error("Failed to fetch stats");
@@ -44,8 +42,8 @@ const LeetCodeStatsCard = async () => {
   const stats = await getStats();
 
   return (
-    <div className="bg-white shadow-md px-5 py-3 dark:bg-[#0c0c0c] md:w-[800px] aspect-[1/0.35] rounded-md">
-      <div className="flex items-center gap-2">
+    <div className="bg-white w-[100%] shadow-md px-5 py-3 dark:bg-[#0c0c0c] md:w-[800px] aspect-[1/0.35] sm:aspect-auto sm:h-fit rounded-md grid-cols-2 md:grid-cols-1 h-full">
+      <div className="flex items-center gap-2 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           enableBackground="new 0 0 24 24"
@@ -87,13 +85,13 @@ const LeetCodeStatsCard = async () => {
           ></path>
         </svg>
         <h1
-          className={`${roboto.className} font-bold text-[5vmin] md:text-[2.5vmin] `}
+          className={`${roboto.className} font-bold lg:text-[5vmin] md:text-[2.2vmin] sm:text-[0.5vw] `}
         >
           Yash_kumar321
         </h1>
       </div>
       <div className="h-full px-3 flex items-center gap-5">
-        <div className="px-5 w-[80%] flex flex-col items-center">
+        <div className="px-5 h-full w-[80%] flex flex-col items-center justify-center ">
           <CircularProgress
             total={stats.totalQuestions}
             value={stats.totalSolved}
@@ -101,17 +99,17 @@ const LeetCodeStatsCard = async () => {
             progressColor="#7FD349"
             secondaryColor="#aaa"
             strokeWidth={6}
+            className="h-full"
           />
-          <h3 className={`${roboto.className} text-sm font-semibold mt-3`}>
+          <h3 className={`${roboto.className} text-sm sm:text-xs  font-semibold mt-3`}>
             Total Solved:{" "}
             <span className="text-green-500">{stats.totalSolved}</span> /{" "}
             <span className="text-orange-400" >{stats.totalQuestions}</span>
           </h3>
         </div>
-        <div className="h-[80%] border-l border-l-gray-500 bg-gray-500 " ></div>
-        <div className="w-full h-[80%] flex flex-col items-start justify-center gap-3 ">
+        <div className="w-full h-[80%] flex flex-col items-start justify-center gap-3 sm:text-xs">
           <div className="w-full text-green-500 font-semibold">
-            <label>Easy Solved - {stats.easySolved}  /  {stats.totalEasy} </label>
+            <label className="sm:text-xs" >Easy Solved - {stats.easySolved}  /  {stats.totalEasy} </label>
           </div>
           <div className="w-full text-orange-400 font-semibold">
             <label>Medium Solved - {stats.mediumSolved}  / {stats.totalMedium} </label>
