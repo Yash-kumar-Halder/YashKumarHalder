@@ -26,7 +26,7 @@ const amarante = Amarante({
 
 const AboutMe = () => {
 	return (
-		<div className="w-full min-h-screen">
+		<div id="about" className="w-full min-h-screen">
 			<h1
 				className={`${merienda.className} text-gradient-red-purple text-center font-bold text-[6vmin] `}
 			>
@@ -135,13 +135,13 @@ const AboutMe = () => {
 								className={`${amarante.className} text-[7vmin] md:text-[3vmin] leading-[3vmin] flex items-center gap-3 text-white`}
 							>
 								<Slack className="w-[7vmin] h-[7vmin] md:w-[3vmin] md:h-[3vmin]  " />
-								SOCIAL
+								SOCIAL MEDIA
 							</h2>
 
-							<CircleArrowRight
+							{/* <CircleArrowRight
 								size={30}
 								className="stroke-1 stroke-gray-600 hover:stroke-muted-foreground transition-all duration-200 hover:-rotate-12 cursor-pointer hover:scale-110"
-							/>
+							/> */}
 						</div>
 					</div>
 					<div className="order-2 sm:order-2 h-full px-8 py-6 pb-4 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 flex flex-col items-start justify-end relative overflow-hidden hover:scale-[1.02] transition-all duration-200 ">

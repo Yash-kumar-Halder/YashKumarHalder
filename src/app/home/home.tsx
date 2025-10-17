@@ -11,6 +11,7 @@ const inter = Inter({
 const HomePage = () => {
 	return (
 		<div
+        id="home"
 			className={`${inter.className} w-full min-h-screen px-8 grid grid-cols-1 md:grid-cols-[1.3fr_0.7fr] overflow-hidden relative`}
 		>
 			<HomeHero />

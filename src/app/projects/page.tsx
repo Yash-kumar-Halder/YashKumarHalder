@@ -10,7 +10,7 @@ const merienda = Merienda({
 
 const Projects = () => {
   return (
-    <div className="py-10 sm:py-[5vmin] min-h-screen px-4 md:px-[10vmin] ">
+    <div id="projects" className="py-10 sm:py-[5vmin] min-h-screen px-4 md:px-[10vmin] ">
       <h1
         className={`${merienda.className} text-center text-[12vmin] md:text-[6vmin] text-gradient-red-purple font-semibold `}
       >
