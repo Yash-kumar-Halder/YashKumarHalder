@@ -12,7 +12,7 @@ const merienda = Merienda({
 
 const Stats = () => {
   return (
-    <div id="stats" className="min-h-screen flex flex-col items-center">
+    <section id="stats" className="min-h-screen flex flex-col items-center">
       <h1
         className={`${merienda.className} text-gradient-red-purple text-center text-[12vmin] md:text-[6vmin]`}
       >
@@ -23,7 +23,7 @@ const Stats = () => {
         <LeetCodeStatsCard />
         <GithubStatsCard />
       </div>
-    </div>
+    </section>
   );
 };
 

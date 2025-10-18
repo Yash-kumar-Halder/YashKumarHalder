@@ -70,12 +70,12 @@ const NavigationBar = () => {
           >
             Stats
           </Link>
-          <Link
+          {/* <Link
             className="hover:text-orange-400 h-full px-4 content-center"
             href="/contact"
           >
             Contact
-          </Link>
+          </Link> */}
         </div>
         <button
           className="cursor-pointer ml-3"

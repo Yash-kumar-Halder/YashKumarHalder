@@ -9,15 +9,12 @@ import Projects from "./projects/page";
 import TechStack from "./tech/page";
 import Stats from "./stats/page";
 
-const MainPage = () => {
-  useEffect(() => {
-    // Initialize Lenis
+const MainPage = () => {useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      duration: 2.3,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // ✅ smooth easing curve
     });
 
-    // Create a smooth scroll loop
     function raf(time:any) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -25,7 +22,6 @@ const MainPage = () => {
 
     requestAnimationFrame(raf);
 
-    // Cleanup when component unmounts
     return () => lenis.destroy();
   }, []);
 
@@ -35,7 +31,7 @@ const MainPage = () => {
       <TechStack />
       <Projects />
       <AboutMe />
-      <Stats />
+      {/* <Stats /> */}
     </main>
   );
 };
