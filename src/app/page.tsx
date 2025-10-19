@@ -11,7 +11,7 @@ import Stats from "./stats/page";
 
 const MainPage = () => {useEffect(() => {
     const lenis = new Lenis({
-      duration: 2.3,
+      duration: 1.3,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // ✅ smooth easing curve
     });
 
@@ -29,8 +29,8 @@ const MainPage = () => {useEffect(() => {
     <main className="w-full h-full">
       <HomePage />
       <TechStack />
-      <Projects />
       <AboutMe />
+      <Projects />
       {/* <Stats /> */}
     </main>
   );

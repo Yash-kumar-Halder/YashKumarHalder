@@ -1,6 +1,9 @@
 import ProjectCard from "@/components/MyComponent/project-card";
 import { Merienda } from "next/font/google";
 import React from "react";
+import Vibe from "../../../public/vibe.png"
+import AttendanceSytem from "../../../public/attendance-system.png"
+import OldPortfolio from "../../../public/old-portfolio.png"
 
 const merienda = Merienda({
   subsets: ["latin"],
@@ -16,8 +19,9 @@ const Projects = () => {
       </h1>
       <div className="md:px-[6vmin] ">
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr] min-h-[400px] gap-6  justify-center">
-          <ProjectCard image="https://i.pinimg.com/736x/0e/2d/9e/0e2d9ef546920cb45cd226e369301e03.jpg" github="github.com" title="Project vibe" live="http://yashkumarhalder.vercel.app" layer="#00000020" />
-          <ProjectCard image="https://i.pinimg.com/1200x/5f/6c/3a/5f6c3afb791cd46082eaec9fdc892acb.jpg" github="github.com" title="Project vibe" live="http://yashkumarhalder.vercel.app" layer="#ffffff30" />
+          <ProjectCard image={Vibe} github="https://github.com/Yash-kumar-Halder/VIBE-Frontend" title="Vibe - A social media platform" live="https://vibe-eosin-mu.vercel.app/" layer="#ffffff05" text="#ffffff" />
+          <ProjectCard image={AttendanceSytem} github="github.com" title="Attendance System" live="https://attendance-system-virid.vercel.app/" layer="#00000060" />
+          <ProjectCard image={OldPortfolio} github="github.com" title="Old Portfolio (React)" live="https://yashkumarhalder.vercel.app/" layer="#00000060" />
           </div>
       </div>
     </section>
