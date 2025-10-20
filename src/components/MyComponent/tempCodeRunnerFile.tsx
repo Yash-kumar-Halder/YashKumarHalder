@@ -1,2 +1,0 @@
-
-	const { theme, setTheme } = useTheme();
