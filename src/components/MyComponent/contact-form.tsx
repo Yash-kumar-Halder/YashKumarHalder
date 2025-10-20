@@ -1,14 +1,14 @@
 "use client";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState("");
 
-  const handleChange = (e:any) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e:ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSending(true);
 

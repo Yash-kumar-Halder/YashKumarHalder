@@ -2,7 +2,7 @@ import { connectDB } from "@/lib/dbConnect";
 import Contact from "@/models/Contact";
 import nodemailer from "nodemailer";
 
-export async function POST(req:any) {
+export async function POST(req:Request) {
   try {
     const { name, email, message } = await req.json();
     if (!name || !email || !message)
