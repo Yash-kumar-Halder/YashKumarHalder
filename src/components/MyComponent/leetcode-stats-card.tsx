@@ -7,25 +7,25 @@ const roboto = Roboto({
   weight: ["400", "600"],
 });
 
-type LeetCodeStats = {
-  status: string;
-  message: string;
-  totalSolved: number;
-  totalQuestions: number;
-  easySolved: number;
-  totalEasy: number;
-  mediumSolved: number;
-  totalMedium: number;
-  hardSolved: number;
-  totalHard: number;
-  acceptanceRate: number;
-  ranking: number;
-  contributionPoints: number;
-  reputation: number;
-  submissionCalendar: {
-    [timestamp: string]: number; // key is a timestamp, value is submission count
-  };
-};
+// type LeetCodeStats = {
+//   status: string;
+//   message: string;
+//   totalSolved: number;
+//   totalQuestions: number;
+//   easySolved: number;
+//   totalEasy: number;
+//   mediumSolved: number;
+//   totalMedium: number;
+//   hardSolved: number;
+//   totalHard: number;
+//   acceptanceRate: number;
+//   ranking: number;
+//   contributionPoints: number;
+//   reputation: number;
+//   submissionCalendar: {
+//     [timestamp: string]: number; // key is a timestamp, value is submission count
+//   };
+// };
 
 async function getStats() {
   const res = await fetch(
