@@ -3,6 +3,23 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.bg-gradient-red-purple {
+    background: linear-gradient(90deg, #ff0000b2, #ff0000, #6429ec, #2c2fdf, #0004ff);
+}
+.border-gradient-red-purple {
+    border-radius: 5px;               /* outer rounded corners */
+    padding: 3px;                      /* border thickness */
+    background: linear-gradient(90deg, #ff000030, #3336ea30);
+  }
+  
+  .border-gradient-red-purple > .content {
+    border-radius: 9px;                /* slightly smaller inner radius */
+    background: white;                 /* inner content background */
+    padding: 1rem;
+  }
+  
+
 .text-gradient-teal-green {
   background: linear-gradient(90deg, #00e297, #0003b1, #0003b1, #1200b1);
   -webkit-background-clip: text;

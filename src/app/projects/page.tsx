@@ -11,7 +11,7 @@ const merienda = Merienda({
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-10 sm:py-[5vmin] min-h-screen px-4 md:px-[10vmin] ">
+    <section id="projects" className="py-10 sm:py-[5vmin] min-h-[60vh] h-fit px-4 md:px-[10vmin] ">
       <h1
         className={`${merienda.className} text-center text-[12vmin] md:text-[6vmin] text-gradient-red-purple font-semibold `}
       >
@@ -20,8 +20,8 @@ const Projects = () => {
       <div className="md:px-[6vmin] ">
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr] min-h-[400px] gap-6  justify-center">
           <ProjectCard image={Vibe} github="https://github.com/Yash-kumar-Halder/VIBE-Frontend" title="Vibe - A social media platform" live="https://vibe-eosin-mu.vercel.app/" layer="#ffffff05" text="#ffffff" />
-          <ProjectCard image={AttendanceSytem} github="github.com" title="Attendance System" live="https://attendance-system-virid.vercel.app/" layer="#00000060" />
-          <ProjectCard image={OldPortfolio} github="github.com" title="Old Portfolio (React)" live="https://yashkumarhalder.vercel.app/" layer="#00000060" />
+          <ProjectCard image={AttendanceSytem} github="https://github.com/Yash-kumar-Halder/Attendance-System" title="Attendance System" live="https://attendance-system-virid.vercel.app/" layer="#00000060" text="#ffffff" />
+          <ProjectCard image={OldPortfolio} github="https://github.com/Yash-kumar-Halder/Portfolio" title="Old Portfolio (React)" live="https://yashkumarhalder.vercel.app/" layer="#00000060" text="#ffffff" />
           </div>
       </div>
     </section>

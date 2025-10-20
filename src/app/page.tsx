@@ -7,7 +7,7 @@ import HomePage from "./home/home";
 import AboutMe from "./about/page";
 import Projects from "./projects/page";
 import TechStack from "./tech/page";
-import Stats from "./stats/page";
+import Contact from "./contact/page";
 
 const MainPage = () => {useEffect(() => {
     const lenis = new Lenis({
@@ -31,6 +31,7 @@ const MainPage = () => {useEffect(() => {
       <TechStack />
       <AboutMe />
       <Projects />
+      <Contact />
       {/* <Stats /> */}
     </main>
   );

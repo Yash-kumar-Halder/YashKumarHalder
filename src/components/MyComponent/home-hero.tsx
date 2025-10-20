@@ -156,7 +156,7 @@ const HomeHero = () => {
 							React JS
 						</span>
 					</div>
-					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-bl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
+					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-bl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center p-3">
 						<Image
 							src="/vs-code.png"
 							width="300"
@@ -165,10 +165,10 @@ const HomeHero = () => {
 							className="w-32 object-contain group-hover:mb-3 transition-all  duration-200"
 						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
-							React JS
+							VS Code
 						</span>
 					</div>
-					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-tr-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:-translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center aspect-square">
+					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-tr-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:-translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center aspect-square p-3">
 						<Image
 							src="/tailwind.png"
 							width="300"
@@ -177,7 +177,7 @@ const HomeHero = () => {
 							className="w-32 object-contain group-hover:mb-1 transition-all  duration-200"
 						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
-							React JS
+							Tailwind CSS
 						</span>
 					</div>
 					<div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-tl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center">
@@ -189,7 +189,7 @@ const HomeHero = () => {
 							className="w-20 object-contain group-hover:mb-3 transition-all  duration-200"
 						/>
 						<span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
-							React JS
+							Python
 						</span>
 					</div>
 				</div>

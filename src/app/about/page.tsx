@@ -11,6 +11,7 @@ import {
 	Slack,
 	SquareChartGantt,
 } from "lucide-react";
+import Link from "next/link";
 
 const merienda = Merienda({
 	subsets: ["latin"],
@@ -166,10 +167,12 @@ const AboutMe = () => {
 									together
 								</span>
 							</h2>
-							<CircleArrowRight
+							<Link href="#contact" className="z-[1]" >
+                            <CircleArrowRight
 								size={50}
 								className="stroke-1 stroke-muted z-[1] hover:stroke-muted-foreground transition-all duration-200 hover:-rotate-12 cursor-pointer hover:scale-110"
 							/>
+                            </Link>
 						</div>
 					</div>
 					<div className="order-1 sm:order-3 h-full px-8 py-2 pb-5 flex flex-col items-start justify-start bg-gray-600/20 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted hover:scale-[1.02] transition-all duration-200 ">
