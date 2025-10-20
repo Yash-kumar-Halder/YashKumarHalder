@@ -15,7 +15,7 @@ const MainPage = () => {useEffect(() => {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // ✅ smooth easing curve
     });
 
-    function raf(time:any) {
+    function raf(time:number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }

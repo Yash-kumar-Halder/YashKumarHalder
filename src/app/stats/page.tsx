@@ -1,7 +1,6 @@
 import GithubStatsCard from "@/components/MyComponent/github-stats-card";
 import LeetCodeStatsCard from "@/components/MyComponent/leetcode-stats-card";
 import { Merienda } from "next/font/google";
-import Image from "next/image";
 import React from "react";
 
 const merienda = Merienda({

@@ -20,7 +20,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const NavigationBar = () => {
+const NavigationBar: React.FC = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
