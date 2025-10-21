@@ -45,7 +45,7 @@ export default function ContactForm() {
 
       <textarea name="message" placeholder="Message" value={form.message} onChange={handleChange} className="resize-none p-2 h-32 w-full bg-white dark:bg-black rounded-sm outline-0" required />
         </div>
-      <button type="submit" className="bg-gradient-red-purple cursor-pointer w-fit px-12 text-white p-2 rounded hover:bg-blue-600">{isSending ? "Sending" : "Send"}</button>
+      <button type="submit" className="bg-gradient-red-purple cursor-pointer w-fit px-12 text-white p-2 rounded hover:bg-blue-600 font-semibold">{isSending ? "Sending" : "Send"}</button>
       {status && <p className="text-center">{status}</p>}
     </form>
   );
