@@ -4,6 +4,15 @@
 import { ReactNode, useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
+interface LenisScrollEvent {
+    scroll: number;
+    limit: number;
+    velocity: number;
+    direction: 1 | -1;
+    progress: number;
+  }
+  
+
 export default function LenisWrapper({ children }: { children: ReactNode }) {
   useEffect(() => {
     const lenis = new Lenis({ duration: 1.3, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
@@ -22,7 +31,7 @@ export default function LenisWrapper({ children }: { children: ReactNode }) {
       fadeTimeout = setTimeout(() => indicator.classList.remove("visible"), 500);
     }
 
-    lenis.on("scroll", (e: any) => showIndicator(e.scroll, e.limit));
+    lenis.on("scroll", (e: LenisScrollEvent) => showIndicator(e.scroll, e.limit));
 
     function raf(time: number) {
       lenis.raf(time);
