@@ -4,10 +4,36 @@ import React from "react";
 import Vibe from "../../../public/vibe.png"
 import AttendanceSytem from "../../../public/attendance-system.png"
 import OldPortfolio from "../../../public/old-portfolio.png"
+import { Metadata } from "next";
 
 const merienda = Merienda({
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+    metadataBase: new URL("http://localhost:3000/"), // ⚡ ensures OG & Twitter images resolve
+    title: "Projects | Yash Kumar Halder",
+    description:
+      "Explore projects by Yash Kumar Halder — frontend developer skilled in React, JavaScript, and the MERN Stack. Discover web apps, UI designs, and innovative solutions.",
+    openGraph: {
+      title: "Projects | Yash Kumar Halder",
+      description:
+        "Showcasing the best projects by Yash Kumar Halder — including MERN stack web apps, interactive UIs, and modern frontend designs.",
+      url: "/projects", // relative path; resolves against metadataBase
+      siteName: "Yash Kumar Halder",
+      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Projects | Yash Kumar Halder",
+      description:
+        "Explore React and MERN stack projects by Yash Kumar Halder — modern, responsive, and performance-focused web applications.",
+      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
+    },
+  };
+  
 
 const Projects = () => {
   return (

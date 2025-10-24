@@ -1,6 +1,7 @@
 import React from "react";
 import { Merienda, Permanent_Marker } from "next/font/google";
 import TechCard from "@/components/MyComponent/tech-card";
+import { Metadata } from "next";
 
 const merienda = Merienda({
   subsets: ["latin"],
@@ -85,6 +86,31 @@ const tools = [
     description: "3D JavaScript library",
   },
 ];
+
+export const metadata: Metadata = {
+    metadataBase: new URL("http://localhost:3000/"), // ⚡ ensures OG & Twitter images resolve
+    title: "Tech Stack | Yash Kumar Halder",
+    description:
+      "Discover the tech stack and skills of Yash Kumar Halder — frontend and full-stack developer skilled in HTML, CSS, JavaScript, React, Node.js, and MongoDB.",
+    openGraph: {
+      title: "Tech Stack | Yash Kumar Halder",
+      description:
+        "Explore the programming languages, frameworks, and tools mastered by Yash Kumar Halder including JavaScript, React, Node.js, MongoDB, HTML, CSS, and more.",
+      url: "/tech", // relative path; will resolve against metadataBase
+      siteName: "Yash Kumar Halder",
+      images: ["/og-image-tech.jpg"], // resolves to https://your-domain.com/og-image-tech.jpg
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Tech Stack | Yash Kumar Halder",
+      description:
+        "Frontend and full-stack developer skills of Yash Kumar Halder — showcasing languages, frameworks, and tools used in projects.",
+      images: ["/og-image-tech.jpg"], // resolves to https://your-domain.com/og-image-tech.jpg
+    },
+  };
+  
 
 const TechStack = () => {
   return (

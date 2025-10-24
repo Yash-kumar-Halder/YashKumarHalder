@@ -12,6 +12,7 @@ import {
 	SquareChartGantt,
 } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
 
 const merienda = Merienda({
 	subsets: ["latin"],
@@ -24,6 +25,28 @@ const amarante = Amarante({
 	subsets: ["latin"],
 	weight: "400",
 });
+
+export const metadata: Metadata = {
+    metadataBase: new URL("http://localhost:3000/"), // ⚡ ensures OG & Twitter images resolve
+    title: "About | Yash Kumar Halder",
+    description: "Learn more about Yash Kumar Halder — frontend developer skilled in React and MERN Stack.",
+    openGraph: {
+      title: "About | Yash Kumar Halder",
+      description: "Frontend developer skilled in React and MERN Stack.",
+      url: "/about", // relative path; resolves against metadataBase
+      siteName: "Yash Kumar Halder",
+      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
+      locale: "en_US",
+      type: "profile",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "About | Yash Kumar Halder",
+      description: "Frontend developer skilled in React and MERN Stack.",
+      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
+    },
+  };
+  
 
 const AboutMe = () => {
 	return (
