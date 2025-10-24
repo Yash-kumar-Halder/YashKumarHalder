@@ -1,3 +1,35 @@
+.scroll-indicator {
+    position: fixed;
+    right: 8px;
+    top: 0;
+    width: 5px;
+    height: 120px;
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(15px) scaleY(1); 
+    transform-origin: center top;  /* default, will change in JS */
+    transition:
+      top 0.2s linear,
+      opacity 0.4s ease,
+      transform 0.3s ease; 
+    z-index: 9999;
+    pointer-events: none;
+  }
+  
+  .scroll-indicator.visible {
+    opacity: 1;
+    transform: translateX(0) scaleY(1);
+  }
+  
+  .scroll-indicator.stretch {
+    transform: translateX(0) scaleY(1.1);
+  }
+          
+  
+      
+
+
 .text-gradient-red-purple {
   background: linear-gradient(90deg, #ff0000, #ff0000, #3336ea, #3336ea);
   -webkit-background-clip: text;

@@ -4,11 +4,27 @@
 * {
 	box-sizing: border-box;
 }
-html {
+/* html {
     scroll-behavior: smooth;
-  }
+  } */
 
+  html, body, [data-lenis-scroll], * {
+    scrollbar-gutter: stable;
+    -ms-overflow-style: none;
+    scrollbar-width: none !important;
+  }
   
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  [data-lenis-scroll]::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
