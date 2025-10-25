@@ -129,7 +129,7 @@ const TechStack = () => {
       </h1>
       <div className="mt-12">
         <h2
-          className={`${permanent_marker.className} text-gradient-teal-green text-[8vmin] ml-3 md:text-[5vmin] text-muted-foreground`}
+          className={`${permanent_marker.className} text-gradient-teal-green text-[4vmin] sm:text-[5vmin] ml-3 md:text-[5vmin] text-muted-foreground`}
         >
           Languages I Use
         </h2>
@@ -141,7 +141,7 @@ const TechStack = () => {
       </div>
       <div className="mt-14">
         <h2
-          className={`${permanent_marker.className} text-gradient-teal-green text-[5vmin] text-muted-foreground`}
+          className={`${permanent_marker.className} text-gradient-teal-green text-[4vmin] sm:text-[5vmin] md:text-[5vmin] text-muted-foreground ml-3`}
         >
           Essential Tools I Use
         </h2>

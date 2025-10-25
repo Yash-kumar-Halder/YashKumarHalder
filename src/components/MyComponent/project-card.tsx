@@ -41,11 +41,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, github, live, l
           </Link>
         )}
 
-        <div style={{ backgroundColor: layer }} className={`absolute bg-gradient-to-b w-full h-[30%] -bottom-[14%] backdrop-blur-[2px] left-0 group-hover:bottom-0 transition-all duration-200 px-[5%] pt-[2%] flex flex-col gap-1`}>
-            <h2 style={{ color: text }} className="font-semibold text-lg " >{title}</h2>
-            <Link href={github}  aria-label="Github" className="flex items-center gap-1 border-black bg-[#ffffff9c] shadow-md w-fit px-2 py-0.5 rounded-full text-black" >
+        <div style={{ backgroundColor: layer }} className={`absolute bg-gradient-to-b w-full h-[30px] md:h-[30px] lg:h-[80px] bottom-0 md:-bottom-[1%] lg:-bottom-[12%] backdrop-blur-[2px] left-0 group-hover:bottom-0 transition-all duration-200 px-[5%] pt-[2%] flex lg:flex-col justify-center gap-1 lg:gap-0 xl:gap-2`}>
+            <h2 style={{ color: text }} className="font-semibold sm:text-sm md:text-xs lg:text-base text-nowrap w-full h-1/2 lg:h-fit" >{title}</h2>
+            <Link href={github}  aria-label="Github" className="flex items-center gap-1 h-fit border-black bg-[#ffffff9c] shadow-md w-fit px-2 py-0.5 lg:py-0 rounded-full text-black text-xs lg:text-sm" >
                 <Github size={14} />
-                <p className="font-semibold text-sm" >Github</p>
+                <p className="font-semibold text-sm hidden lg:block" >Github</p>
             </Link>
         </div>
 

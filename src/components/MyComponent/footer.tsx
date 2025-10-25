@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="min-h-[30vh] border-t bg-neutral-900 dark:bg-neutral-950 border-t-neutral-400 dark:border-t-neutral-800 flex items-center justify-evenly ">
-      <div className="flex flex-col items-center py-5 border-r w-full h-full">
+      <div className="flex flex-col items-center py-5 border-r w-2/3 md:w-full h-full">
         <div className="flex py-4 items-center gap-2 text-neutral-300">
           <Link
             href="https://github.com/yash-kumar-halder"
@@ -99,23 +99,43 @@ const Footer = () => {
           &#xA9; All Rights Reserved - 2025
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center w-full gap-1 text-neutral-300 font-semibold ">
-        <Link href="#home"  aria-label="Home section" className="hover:text-amber-500 transition-colors duration-100">
+      <div className="flex flex-col items-center justify-center w-1/3 md:w-full gap-1 text-neutral-300 font-semibold ">
+        <Link
+          href="#home"
+          aria-label="Home section"
+          className="hover:text-amber-500 transition-colors duration-100"
+        >
           Home
         </Link>
-        <Link href="#about"  aria-label="About section" className="hover:text-amber-500 transition-colors duration-100">
+        <Link
+          href="#about"
+          aria-label="About section"
+          className="hover:text-amber-500 transition-colors duration-100"
+        >
           About
         </Link>
-        <Link href="#projects"  aria-label="Projects section" className="hover:text-amber-500 transition-colors duration-100">
+        <Link
+          href="#projects"
+          aria-label="Projects section"
+          className="hover:text-amber-500 transition-colors duration-100"
+        >
           Projects
         </Link>
-        <Link href="#tech"  aria-label="Tech section" className="hover:text-amber-500 transition-colors duration-100">
+        <Link
+          href="#tech"
+          aria-label="Tech section"
+          className="hover:text-amber-500 transition-colors duration-100"
+        >
           Tech
         </Link>
-        <Link href="#contact"  aria-label="Contact section" className="hover:text-amber-500 transition-colors duration-100">
+        <Link
+          href="#contact"
+          aria-label="Contact section"
+          className="hover:text-amber-500 transition-colors duration-100"
+        >
           Contact
         </Link>
-      </div> 
+      </div>
     </div>
   );
 };

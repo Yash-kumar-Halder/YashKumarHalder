@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const Contact = () => {
   return (
     <section id="contact" className="min-h-[80vh] w-full flex flex-col gap-10 items-center justify-center md:px-[20%] sm:px-5 ">
-        <h1 className={`${caveatBrush.className} text-4xl text-gradient-red-purple`} >Always open to new ideas and collaborations—drop me a message anytime.</h1>
+        <h1 className={`${caveatBrush.className} text-center px-5 text-[6vmin] leading-[7vmin] lg:text-4xl text-gradient-red-purple`} >Always open to new ideas and collaborations—drop me a message anytime.</h1>
       <ContactForm />
     </section>
   );
