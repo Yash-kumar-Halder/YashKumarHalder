@@ -87,29 +87,36 @@ const tools = [
   },
 ];
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
-    metadataBase: new URL("http://localhost:3000/"), // ⚡ ensures OG & Twitter images resolve
-    title: "Tech Stack | Yash Kumar Halder",
+  metadataBase: new URL(siteUrl),
+  title: "Skills & Tech | Yash Kumar Halder Portfolio",
+  description:
+    "Discover the technical skills and technologies mastered by Yash Kumar Halder, including React, JavaScript, Node.js, MongoDB, and the MERN Stack.",
+  openGraph: {
+    title: "Skills & Tech | Yash Kumar Halder Portfolio",
     description:
-      "Discover the tech stack and skills of Yash Kumar Halder — frontend and full-stack developer skilled in HTML, CSS, JavaScript, React, Node.js, and MongoDB.",
-    openGraph: {
-      title: "Tech Stack | Yash Kumar Halder",
-      description:
-        "Explore the programming languages, frameworks, and tools mastered by Yash Kumar Halder including JavaScript, React, Node.js, MongoDB, HTML, CSS, and more.",
-      url: "/tech", // relative path; will resolve against metadataBase
-      siteName: "Yash Kumar Halder",
-      images: ["/og-image-tech.jpg"], // resolves to https://your-domain.com/og-image-tech.jpg
-      locale: "en_US",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "Tech Stack | Yash Kumar Halder",
-      description:
-        "Frontend and full-stack developer skills of Yash Kumar Halder — showcasing languages, frameworks, and tools used in projects.",
-      images: ["/og-image-tech.jpg"], // resolves to https://your-domain.com/og-image-tech.jpg
-    },
-  };
+      "Discover the technical skills and technologies mastered by Yash Kumar Halder, including React, JavaScript, Node.js, MongoDB, and the MERN Stack.",
+    url: "/skills",
+    siteName: "Yash Kumar Halder",
+    images: ["/skills-og-image.jpg"], // Use a unique OG image for Skills page
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Skills & Tech | Yash Kumar Halder Portfolio",
+    description:
+      "Discover the technical skills and technologies mastered by Yash Kumar Halder, including React, JavaScript, Node.js, MongoDB, and the MERN Stack.",
+    images: ["/skills-og-image.jpg"],
+  },
+  verification: {
+    google: "duOrr4J6kHE_V0QxCUoQG-d9m098nQ9kIl2wrwaod-c",
+  },
+};
+
   
 
 const TechStack = () => {

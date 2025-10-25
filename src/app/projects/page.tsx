@@ -10,29 +10,36 @@ const merienda = Merienda({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
-    metadataBase: new URL("http://localhost:3000/"), // ⚡ ensures OG & Twitter images resolve
-    title: "Projects | Yash Kumar Halder",
+  metadataBase: new URL(siteUrl),
+  title: "Projects | Yash Kumar Halder Portfolio",
+  description:
+    "Explore the projects of Yash Kumar Halder, showcasing skills in React, JavaScript, and the MERN Stack.",
+  openGraph: {
+    title: "Projects | Yash Kumar Halder Portfolio",
     description:
-      "Explore projects by Yash Kumar Halder — frontend developer skilled in React, JavaScript, and the MERN Stack. Discover web apps, UI designs, and innovative solutions.",
-    openGraph: {
-      title: "Projects | Yash Kumar Halder",
-      description:
-        "Showcasing the best projects by Yash Kumar Halder — including MERN stack web apps, interactive UIs, and modern frontend designs.",
-      url: "/projects", // relative path; resolves against metadataBase
-      siteName: "Yash Kumar Halder",
-      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
-      locale: "en_US",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "Projects | Yash Kumar Halder",
-      description:
-        "Explore React and MERN stack projects by Yash Kumar Halder — modern, responsive, and performance-focused web applications.",
-      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
-    },
-  };
+      "Explore the projects of Yash Kumar Halder, showcasing skills in React, JavaScript, and the MERN Stack.",
+    url: "/projects",
+    siteName: "Yash Kumar Halder",
+    images: ["/projects-og-image.jpg"], // Create a unique OG image for Projects page
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects | Yash Kumar Halder Portfolio",
+    description:
+      "Explore the projects of Yash Kumar Halder, showcasing skills in React, JavaScript, and the MERN Stack.",
+    images: ["/projects-og-image.jpg"],
+  },
+  verification: {
+    google: "duOrr4J6kHE_V0QxCUoQG-d9m098nQ9kIl2wrwaod-c",
+  },
+};
+
   
 
 const Projects = () => {

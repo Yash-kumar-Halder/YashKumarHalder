@@ -26,26 +26,36 @@ const amarante = Amarante({
 	weight: "400",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
-    metadataBase: new URL("http://localhost:3000/"), // ⚡ ensures OG & Twitter images resolve
-    title: "About | Yash Kumar Halder",
-    description: "Learn more about Yash Kumar Halder — frontend developer skilled in React and MERN Stack.",
+    metadataBase: new URL(siteUrl),
+    title: "About | Yash Kumar Halder Portfolio",
+    description:
+      "Learn more about Yash Kumar Halder, a Full Stack developer skilled in React, JavaScript, and the MERN Stack.",
     openGraph: {
-      title: "About | Yash Kumar Halder",
-      description: "Frontend developer skilled in React and MERN Stack.",
-      url: "/about", // relative path; resolves against metadataBase
+      title: "About | Yash Kumar Halder Portfolio",
+      description:
+        "Learn more about Yash Kumar Halder, a Full Stack developer skilled in React, JavaScript, and the MERN Stack.",
+      url: "/about",
       siteName: "Yash Kumar Halder",
-      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
+      images: ["/about-og-image.jpg"],
       locale: "en_US",
-      type: "profile",
+      type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: "About | Yash Kumar Halder",
-      description: "Frontend developer skilled in React and MERN Stack.",
-      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
+      title: "About | Yash Kumar Halder Portfolio",
+      description:
+        "Learn more about Yash Kumar Halder, a Full Stack developer skilled in React, JavaScript, and the MERN Stack.",
+      images: ["/about-og-image.jpg"],
+    },
+    verification: {
+      google: "duOrr4J6kHE_V0QxCUoQG-d9m098nQ9kIl2wrwaod-c",
     },
   };
+  
   
 
 const AboutMe = () => {

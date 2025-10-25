@@ -10,29 +10,36 @@ const caveatBrush = Caveat_Brush({
     variable: "--font-caveat-brush", // CSS variable name
   });
 
-  export const metadata: Metadata = {
-    metadataBase: new URL("http://localhost:3000/v"), // ⚡ ensures OG & Twitter images resolve
-    title: "Contact | Yash Kumar Halder",
+  const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: "Contact | Yash Kumar Halder Portfolio",
+  description:
+    "Get in touch with Yash Kumar Halder, Full Stack developer skilled in React, JavaScript, and the MERN Stack. Reach out for projects, collaborations, or queries.",
+  openGraph: {
+    title: "Contact | Yash Kumar Halder Portfolio",
     description:
-      "Get in touch with Yash Kumar Halder — frontend developer skilled in React, JavaScript, and the MERN Stack. Let's collaborate or discuss your next project.",
-    openGraph: {
-      title: "Contact | Yash Kumar Halder",
-      description:
-        "Reach out to Yash Kumar Halder — a frontend developer specializing in React and the MERN Stack. Open for collaboration and freelance opportunities.",
-      url: "/contact", // relative path; resolves against metadataBase
-      siteName: "Yash Kumar Halder",
-      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
-      locale: "en_US",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "Contact | Yash Kumar Halder",
-      description:
-        "Connect with Yash Kumar Halder — frontend developer skilled in React and MERN Stack. Let's build something impactful together.",
-      images: ["/og-image.jpg"], // resolves to https://your-domain.com/og-image.jpg
-    },
-  };
+      "Get in touch with Yash Kumar Halder, Full Stack developer skilled in React, JavaScript, and the MERN Stack. Reach out for projects, collaborations, or queries.",
+    url: "/contact",
+    siteName: "Yash Kumar Halder",
+    images: ["/contact-og-image.jpg"], // Use a unique OG image for Contact page
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | Yash Kumar Halder Portfolio",
+    description:
+      "Get in touch with Yash Kumar Halder, Full Stack developer skilled in React, JavaScript, and the MERN Stack. Reach out for projects, collaborations, or queries.",
+    images: ["/contact-og-image.jpg"],
+  },
+  verification: {
+    google: "duOrr4J6kHE_V0QxCUoQG-d9m098nQ9kIl2wrwaod-c",
+  },
+};
+
 
 const Contact = () => {
   return (
