@@ -16,18 +16,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000/"), // ⚡ Add this
+  metadataBase: new URL(siteUrl),
   title: "Yash Kumar Halder | Portfolio",
   description:
-    "Frontend developer skilled in React, JavaScript, and MERN Stack.",
+    "Full Stack developer skilled in React, JavaScript, and MERN Stack.",
   openGraph: {
     title: "Yash Kumar Halder | Portfolio",
     description:
-      "Frontend developer skilled in React, JavaScript, and MERN Stack.",
+      "Full Stack developer skilled in React, JavaScript, and MERN Stack.",
     url: "/",
     siteName: "Yash Kumar Halder",
-    images: ["/og-image.jpg"], // will resolve to https://your-domain.com/og-image.jpg
+    images: ["/og-image.jpg"],
     locale: "en_US",
     type: "website",
   },
@@ -35,9 +38,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yash Kumar Halder | Portfolio",
     description:
-      "Frontend developer skilled in React, JavaScript, and MERN Stack.",
-    images: ["/og-image.jpg"], // will resolve to https://your-domain.com/og-image.jpg
+      "Full Stack developer skilled in React, JavaScript, and MERN Stack.",
+    images: ["/og-image.jpg"],
   },
+  verification: {
+    google: "duOrr4J6kHE_V0QxCUoQG-d9m098nQ9kIl2wrwaod-c"
+  }
 };
 
 export default function RootLayout({
