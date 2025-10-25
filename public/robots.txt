@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yashkumarhalder.vercel.app/sitemap.xml
