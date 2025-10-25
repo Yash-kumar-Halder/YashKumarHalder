@@ -18,7 +18,7 @@ const languages = [
     description: "Hypertext Markup Language",
   },
   {
-    imageUrl: "/CSS.png",
+    imageUrl: "/css.png",
     title: "CSS",
     description: "Cascading Style Sheets",
   },
