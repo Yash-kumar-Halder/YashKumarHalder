@@ -31,6 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, github, live, l
         {live && (
           <Link
             href={live}
+            aria-label={title}
             target="_blank"
             className="absolute top-5 bg-[#00000052] px-3 py-0.5 rounded-full right-5 backdrop-blur-sm hover:scale-110 hover:scale-x-[1.2]
             transition-all duration-200 flex items-center gap-2 border border-[#ffffff20] "
@@ -42,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, github, live, l
 
         <div style={{ backgroundColor: layer }} className={`absolute bg-gradient-to-b w-full h-[30%] -bottom-[14%] backdrop-blur-[2px] left-0 group-hover:bottom-0 transition-all duration-200 px-[5%] pt-[2%] flex flex-col gap-1`}>
             <h2 style={{ color: text }} className="font-semibold text-lg " >{title}</h2>
-            <Link href={github} className="flex items-center gap-1 border-black bg-[#ffffff9c] shadow-md w-fit px-2 py-0.5 rounded-full text-black" >
+            <Link href={github}  aria-label="Github" className="flex items-center gap-1 border-black bg-[#ffffff9c] shadow-md w-fit px-2 py-0.5 rounded-full text-black" >
                 <Github size={14} />
                 <p className="font-semibold text-sm" >Github</p>
             </Link>

@@ -5,9 +5,10 @@ const Footer = () => {
   return (
     <div className="min-h-[30vh] border-t bg-neutral-900 dark:bg-neutral-950 border-t-neutral-400 dark:border-t-neutral-800 flex items-center justify-evenly ">
       <div className="flex flex-col items-center py-5 border-r w-full h-full">
-        <div className="flex py-4 items-center gap-2 text-muted">
+        <div className="flex py-4 items-center gap-2 text-neutral-300">
           <Link
             href="https://github.com/yash-kumar-halder"
+            aria-label="Github"
             className="hover:text-amber-500 transition"
           >
             <svg
@@ -28,6 +29,7 @@ const Footer = () => {
           </Link>
           <Link
             href="https://www.linkedin.com/in/yash-kumar-halder/"
+            aria-label="Linkedin"
             className="hover:text-amber-500 transition"
           >
             <svg
@@ -52,6 +54,7 @@ const Footer = () => {
           </Link>
           <Link
             href="https://x.com/YashKumarHalder"
+            aria-label="X"
             className="hover:text-amber-500 transition"
           >
             <svg
@@ -72,7 +75,7 @@ const Footer = () => {
             </svg>
           </Link>
         </div>
-        <div className="flex font-semibold text-muted-foreground">
+        <div className="flex font-semibold text-neutral-300 dark:text-foreground">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -90,26 +93,26 @@ const Footer = () => {
             <path d="M17 8l4 4l-4 4" />
             <path d="M14 4l-4 16" />
           </svg>
-          <h3>YASH KUMAR HALDER</h3>
+          <h1>YASH KUMAR HALDER</h1>
         </div>
-        <p className="text-muted text-lg font-semibold">
+        <p className="text-neutral-200 text-lg font-semibold">
           &#xA9; All Rights Reserved - 2025
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center w-full gap-1 text-muted font-semibold ">
-        <Link href="#home" className="hover:text-amber-500 transition-colors duration-100">
+      <div className="flex flex-col items-center justify-center w-full gap-1 text-neutral-300 font-semibold ">
+        <Link href="#home"  aria-label="Home section" className="hover:text-amber-500 transition-colors duration-100">
           Home
         </Link>
-        <Link href="#about" className="hover:text-amber-500 transition-colors duration-100">
+        <Link href="#about"  aria-label="About section" className="hover:text-amber-500 transition-colors duration-100">
           About
         </Link>
-        <Link href="#projects" className="hover:text-amber-500 transition-colors duration-100">
+        <Link href="#projects"  aria-label="Projects section" className="hover:text-amber-500 transition-colors duration-100">
           Projects
         </Link>
-        <Link href="#tech" className="hover:text-amber-500 transition-colors duration-100">
+        <Link href="#tech"  aria-label="Tech section" className="hover:text-amber-500 transition-colors duration-100">
           Tech
         </Link>
-        <Link href="#contact" className="hover:text-amber-500 transition-colors duration-100">
+        <Link href="#contact"  aria-label="Contact section" className="hover:text-amber-500 transition-colors duration-100">
           Contact
         </Link>
       </div> 

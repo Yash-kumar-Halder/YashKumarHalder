@@ -23,9 +23,9 @@ const TechCard = ({ imageUrl, title, description }: TechCardProps) => {
 				<h3 className="text-lg leading-5 font-bold text-stone-800 dark:text-gray-200">
 					{title}
 				</h3>
-				<h6 className="text-xs text-muted-foreground">
+				<h4 className="text-xs text-muted-foreground">
 					{description}
-				</h6>
+				</h4>
 			</div>
 		</div>
 	);

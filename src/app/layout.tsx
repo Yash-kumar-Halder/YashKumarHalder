@@ -1,20 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./common.css";
 import { ThemeProvider } from "next-themes";
 import NavigationBar from "@/components/MyComponent/navigation-bar";
 import Footer from "@/components/MyComponent/footer";
+import {geistSans, geistMono} from "../fonts"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";

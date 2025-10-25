@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     google: "duOrr4J6kHE_V0QxCUoQG-d9m098nQ9kIl2wrwaod-c",
   },
 };
-
+    
 
 const Contact = () => {
   return (
