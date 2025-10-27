@@ -45,6 +45,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+    <head>
+        {/* ✅ Structured Data for Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Yash Kumar Halder",
+              "url": "https://yashkumarhalder.vercel.app",
+              "jobTitle": "Full Stack Developer",
+              "sameAs": [
+                "https://www.linkedin.com/in/yashkumarhalder",
+                "https://github.com/yashkumarhalder",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
