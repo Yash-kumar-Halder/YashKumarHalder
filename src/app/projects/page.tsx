@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-10 sm:py-[5vmin] min-h-[60vh] h-fit px-4 md:px-[10vmin] ">
+    <section id="projects" className="py-10 sm:py-[5vmin] min-h-[72vh] h-fit px-4 md:px-[10vmin] ">
       <h1
         className={`${merienda.className} text-center text-[12vmin] md:text-[6vmin] text-gradient-red-purple font-semibold `}
       >

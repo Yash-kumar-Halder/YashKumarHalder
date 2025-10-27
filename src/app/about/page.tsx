@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 
 const AboutMe = () => {
 	return (
-		<section id="about" className="w-full min-h-screen">
+		<section id="about" className="w-full min-h-screen py-16">
 			<h1
 				className={`${merienda.className} text-gradient-red-purple text-center font-bold text-[6vmin] `}
 			>

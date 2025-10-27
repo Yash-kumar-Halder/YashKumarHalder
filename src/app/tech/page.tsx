@@ -121,7 +121,7 @@ export const metadata: Metadata = {
 
 const TechStack = () => {
   return (
-    <section id="tech" className="w-full min-h-screen px-[10%] pb-24">
+    <section id="tech" className="w-full min-h-screen px-[10%] pb-24 py-16">
       <h1
         className={`${merienda.className} text-gradient-red-purple text-center font-bold text-[6vmin] `}
       >
