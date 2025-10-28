@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="min-h-[30vh] border-t bg-neutral-900 dark:bg-neutral-950 border-t-neutral-400 dark:border-t-neutral-800 flex items-center justify-evenly ">
-      <div className="flex flex-col items-center py-5 border-r w-2/3 md:w-full h-full">
+      <div className="flex flex-col items-center py-5 border-r w-2/3     md:w-full h-full">
         <div className="flex py-4 items-center gap-2 text-neutral-300">
           <Link
             href="https://github.com/yash-kumar-halder"
@@ -98,6 +98,8 @@ const Footer = () => {
         <p className="text-neutral-200 text-lg font-semibold">
           &#xA9; All Rights Reserved - 2025
         </p>
+        <p className="text-neutral-400" >yashkumarhalder@gmail.com</p>
+        <p className="text-neutral-400" >(+91) 8388893667</p>
       </div>
       <div className="flex flex-col items-center justify-center w-1/3 md:w-full gap-1 text-neutral-300 font-semibold ">
         <Link
