@@ -52,9 +52,9 @@ const Projects = () => {
       </h1>
       <div className="md:px-[6vmin] ">
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-[1fr_1fr] md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr] xl:grid-cols-[1fr_1fr_1fr] min-h-[400px] gap-6  justify-center px-2 md:px-6 lg:px-8 xl:px-8">
-          <ProjectCard image={Vibe} github="https://github.com/Yash-kumar-Halder/VIBE-Frontend" title="Vibe - A social media platform" live="https://vibe-eosin-mu.vercel.app/" layer="#ffffff05" text="#ffffff" />
+          <ProjectCard image={Vibe} github="https://github.com/Yash-kumar-Halder/VIBE-Frontend" title="Vibe - A social media platform" live="https://vibemedia.vercel.app/" layer="#ffffff05" text="#ffffff" />
           <ProjectCard image={AttendanceSytem} github="https://github.com/Yash-kumar-Halder/Attendance-System" title="Attendance System" live="https://attendance-system-virid.vercel.app/" layer="#00000060" text="#ffffff" />
-          <ProjectCard image={OldPortfolio} github="https://github.com/Yash-kumar-Halder/Portfolio" title="Old Portfolio (React)" live="https://yashkumarhalder.vercel.app/" layer="#00000060" text="#ffffff" />
+          <ProjectCard image={OldPortfolio} github="https://github.com/Yashkumardev/Portfolio" title="Old Portfolio (React)" live="https://yashworks.vercel.app/" layer="#00000060" text="#ffffff" />
           </div>
       </div>
     </section>
