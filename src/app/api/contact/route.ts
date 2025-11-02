@@ -1,12 +1,15 @@
 import { connectDB } from "@/lib/dbConnect";
 import Contact from "@/models/Contact";
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(req:Request) {
+export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();
     if (!name || !email || !message)
-      return new Response(JSON.stringify({ error: "All fields required" }), { status: 400 });
+      return new Response(JSON.stringify({ error: "All fields required" }), {
+        status: 400,
+      });
 
     await connectDB();
 
@@ -29,9 +32,14 @@ export async function POST(req:Request) {
       text: `Email: ${email}\n\nMessage:\n${message}`,
     });
 
-    return new Response(JSON.stringify({ success: true, data: newMessage }), { status: 200 });
+    return new Response(JSON.stringify({ success: true, data: newMessage }), {
+      status: 200,
+    });
   } catch (error) {
     console.error(error);
-    return new Response(JSON.stringify({ error: "Something went wrong" }), { status: 500 });
+    NextResponse.redirect("yash")
+    return new Response(JSON.stringify({ error: "Something went wrong" }), {
+      status: 500,
+    });
   }
 }

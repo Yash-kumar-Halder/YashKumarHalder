@@ -100,10 +100,15 @@ const NavigationBar: React.FC = () => {
           </SheetTrigger>
           <SheetContent className="md:hidden">
             <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
+              <SheetTitle className="text-2xl" >Pages</SheetTitle>
               <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
+                <div className="flex flex-col px-4 pt-6 gap-2 text-lg">
+                <Link href="#home" aria-label="Home"  >Home</Link>
+                <Link href="#tech" aria-label="Tech"  >Tech</Link>
+                <Link href="#projects" aria-label="Projects"  >Projects</Link>
+                <Link href="#about" aria-label="About"  >About</Link>
+                <Link href="#contact" aria-label="Contact"  >Contact</Link>
+                </div>
               </SheetDescription>
             </SheetHeader>
           </SheetContent>
