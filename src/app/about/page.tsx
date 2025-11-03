@@ -125,7 +125,7 @@ const AboutMe = () => {
           </div>
           <div className="h-full px-8 py-2 rounded-md border border-transparent hover:border-gray-950/50 dark:hover:border-muted bg-gray-600/20 hover:scale-[1.02] transition-all duration-200">
             <div className="flex items-center gap-2 text-purple-700 dark:text-purple-500">
-              <GraduationCap className="w-[7vmin] h-[7vmin] md:w-[3vmin] md:h-[3vmin] " />
+              <GraduationCap className="w-[7vmin] h-[7vmin] md:w-[6vmin] md:h-[6vmin] " />
               <h2
                 className={`${cabin_sketch.className} text-[6vmin] flex items-center gap-2`}
               >

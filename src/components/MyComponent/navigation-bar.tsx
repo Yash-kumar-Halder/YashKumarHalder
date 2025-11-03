@@ -95,7 +95,7 @@ const NavigationBar: React.FC = () => {
         </button>
 
         <Sheet>
-          <SheetTrigger className="md:hidden">
+          <SheetTrigger className="md:hidden" aria-label="Menu bar">
             <Menu />
           </SheetTrigger>
           <SheetContent className="md:hidden">
