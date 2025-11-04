@@ -93,12 +93,12 @@ const Footer = () => {
             <path d="M17 8l4 4l-4 4" />
             <path d="M14 4l-4 16" />
           </svg>
-          <h1>YASH KUMAR HALDER</h1>
+          <h1 className="text-sm md:text-base" >YASH KUMAR HALDER</h1>
         </div>
-        <p className="text-neutral-200 text-lg font-semibold">
+        <p className="text-neutral-200 font-semibold text-sm md:text-base">
           &#xA9; All Rights Reserved - 2025
         </p>
-        <p className="text-neutral-400" >yashkumarhalder@gmail.com</p>
+        <p className="text-neutral-400 text-sm sm:text-base" >yashkumarhalder@gmail.com</p>
         <p className="text-neutral-400" >(+91) 8388893667</p>
       </div>
       <div className="flex flex-col items-center justify-center w-1/3 md:w-full gap-1 text-neutral-300 font-semibold ">
