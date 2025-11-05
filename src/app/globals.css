@@ -4,9 +4,6 @@
 * {
 	box-sizing: border-box;
 }
-/* html {
-    scroll-behavior: smooth;
-  } */
 
   html, body, [data-lenis-scroll], * {
     scrollbar-gutter: stable;

@@ -155,7 +155,7 @@ const HomeHero = () => {
               width="300"
               height="300"
               alt="Image"
-              className="w-24 object-contain group-hover:mb-3 transition-all  duration-200"
+              className="w-[75%] md:w-[85%] object-contain group-hover:mb-3 transition-all  duration-200 p-2 md:p-0"
             />
             <span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
               React JS
@@ -191,7 +191,7 @@ const HomeHero = () => {
               width="300"
               height="300"
               alt="Image"
-              className="w-20 object-contain group-hover:mb-3 transition-all  duration-200"
+              className="w-[75%] md:w-[85%] object-contain group-hover:mb-3 transition-all  duration-200 p-0 md:p-2  lg:p-2 xl:p-1"
             />
             <span className="w-full h-6 absolute bottom-0 text-center left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm font-semibold bg-gradient-to-t from-black/30 to-transparent">
               Python
