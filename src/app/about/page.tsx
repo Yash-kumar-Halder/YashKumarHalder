@@ -224,7 +224,7 @@ const AboutMe = () => {
               <p className="text-xs pb-4  mt-2 md:mt-0 md:text-sm text-gray-600 font-medium dark:text-gray-400 ">
                 Completed Higher Secondary Education in 2024 from Jyotrimoy Basu
                 Vocational Center, Vocational Department, achieving an aggregate
-                of 81.8%. Ask ChatGPT
+                of 81.8%.
               </p>
             </div>
           </div>
