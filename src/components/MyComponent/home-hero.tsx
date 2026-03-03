@@ -152,8 +152,8 @@ const HomeHero = () => {
           <div className="relative aspect-square bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-br-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center">
             <Image
               src="/react.png"
-              width="300"
-              height="300"
+              width="150"
+              height="150"
               alt="Image"
               className="w-[75%] md:w-[85%] object-contain group-hover:mb-3 transition-all  duration-200 p-2 md:p-0"
             />
@@ -164,8 +164,8 @@ const HomeHero = () => {
           <div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-bl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:translate-x-3 group-hover:-translate-y-3 hover:scale-110 flex justify-center p-3">
             <Image
               src="/vs-code.png"
-              width="300"
-              height="300"
+              width="150"
+              height="150"
               alt="Image"
               className="w-32 object-contain group-hover:mb-3 transition-all  duration-200"
             />
@@ -176,8 +176,8 @@ const HomeHero = () => {
           <div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-tr-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:rotate-2 group-hover:-translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center aspect-square p-3">
             <Image
               src="/tailwind.png"
-              width="300"
-              height="300"
+              width="150"
+              height="150"
               alt="Image"
               className="w-32 object-contain group-hover:mb-1 transition-all  duration-200"
             />
@@ -188,8 +188,8 @@ const HomeHero = () => {
           <div className="relative bg-gray-200 shadow-2xl overflow-hidden dark:bg-gray-900 rounded-[24%] rounded-tl-[20%] group-hover:rounded-[5%] cursor-pointer border border-transparent hover:border-teal-500 dark:hover:border-gray-800 transition-all duration-300 group-hover:-rotate-2 group-hover:translate-x-3 group-hover:translate-y-3 hover:scale-110 flex justify-center">
             <Image
               src="/python.png"
-              width="300"
-              height="300"
+              width="150"
+              height="150"
               alt="Image"
               className="w-[75%] md:w-[85%] object-contain group-hover:mb-3 transition-all  duration-200 p-0 md:p-2  lg:p-2 xl:p-1"
             />
