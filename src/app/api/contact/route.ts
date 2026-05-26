@@ -1,45 +1,72 @@
 import { connectDB } from "@/lib/dbConnect";
 import Contact from "@/models/Contact";
-import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
-  try {
-    const { name, email, message } = await req.json();
-    if (!name || !email || !message)
-      return new Response(JSON.stringify({ error: "All fields required" }), {
-        status: 400,
-      });
+    try {
+        const { name, email, message } = await req.json();
 
-    await connectDB();
+        if (!name || !email || !message) {
+            return Response.json(
+                {
+                    success: false,
+                    message: "All fields are required",
+                },
+                {
+                    status: 400,
+                },
+            );
+        }
 
-    // Save message to MongoDB
-    const newMessage = await Contact.create({ name, email, message });
+        await connectDB();
 
-    // Send email notification
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER, // your gmail
-        pass: process.env.EMAIL_PASS, // app password
-      },
-    });
+        const newMessage = await Contact.create({
+            name,
+            email,
+            message,
+        });
 
-    await transporter.sendMail({
-      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-      to: process.env.RECEIVER_EMAIL, // your own email
-      subject: `New Message from ${name}`,
-      text: `Email: ${email}\n\nMessage:\n${message}`,
-    });
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
+            },
+        });
 
-    return new Response(JSON.stringify({ success: true, data: newMessage }), {
-      status: 200,
-    });
-  } catch (error) {
-    console.error(error);
-    NextResponse.redirect("yash")
-    return new Response(JSON.stringify({ error: "Something went wrong" }), {
-      status: 500,
-    });
-  }
+        await transporter.sendMail({
+            from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+            to: process.env.RECEIVER_EMAIL,
+            subject: `New Message from ${name}`,
+            text: `
+  Name: ${name}
+  Email: ${email}
+  
+  Message:
+  ${message}
+        `,
+        });
+
+        return Response.json(
+            {
+                success: true,
+                data: newMessage,
+            },
+            {
+                status: 200,
+            },
+        );
+    } catch (error) {
+        console.error("API Error:", error);
+
+        return Response.json(
+            {
+                success: false,
+                message: "Something went wrong",
+            },
+            {
+                status: 500,
+            },
+        );
+    }
 }
