@@ -28,7 +28,7 @@ const NavigationBar: React.FC = () => {
 
   return (
     <div
-      className={`${inter.className} bg-[#ffffff80] w-[95%] h-10 md:w-[70%] flex items-center justify-between px-8 py-0.5 fixed top-2 left-1/2 transform -translate-x-1/2 shadow-sm dark:bg-[#242424c0] backdrop-blur-sm rounded-sm z-[50] `}
+      className={`${inter.className} bg-[#ffffff80] w-[95%] h-10 md:w-5xl flex items-center justify-between px-8 py-0.5 fixed top-2 left-1/2 transform -translate-x-1/2 shadow-sm dark:bg-[#242424c0] backdrop-blur-sm z-[50] `}
     >
       <div className="h-full flex items-center justify-center">
         <Link href="/"  aria-label="Home section">

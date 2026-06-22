@@ -121,7 +121,7 @@ export const metadata: Metadata = {
 
 const TechStack = () => {
   return (
-    <section id="tech" className="w-full min-h-screen px-[10%] pb-24 py-16">
+    <section id="tech" className="w-full min-h-screen px-10 pb-24 py-16 max-w-[1275px] mx-auto ">
       <h1
         className={`${merienda.className} text-gradient-red-purple text-center font-bold text-[6vmin] `}
       >
@@ -133,7 +133,7 @@ const TechStack = () => {
         >
           Languages I Use
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6">
           {languages.map((lang) => (
             <TechCard {...lang} key={lang.title} />
           ))}
@@ -145,7 +145,7 @@ const TechStack = () => {
         >
           Essential Tools I Use
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {tools.map((tool) => (
             <TechCard {...tool} key={tool.title} />
           ))}
