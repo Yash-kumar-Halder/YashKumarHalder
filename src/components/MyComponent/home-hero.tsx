@@ -3,9 +3,7 @@ import LogoImg from "../../../public/img-3.jpg";
 import HorizontalScale from "./horizontal-scale";
 import {
     Code2,
-    GitBranchIcon,
     Github,
-    GithubIcon,
     GraduationCap,
     Linkedin,
     Mail,
@@ -14,21 +12,6 @@ import {
     Verified,
     X,
 } from "lucide-react";
-import {
-    IconBrandCss3,
-    IconBrandDocker,
-    IconBrandGit,
-    IconBrandHtml5,
-    IconBrandJavascript,
-    IconBrandMongodb,
-    IconBrandNextjs,
-    IconBrandRadixUi,
-    IconBrandReactNative,
-    IconBrandTailwind,
-    IconBrandVercel,
-    IconBrandVscode,
-} from "@tabler/icons-react";
-import { RiGithubFill, RiJavaFill, RiNodejsFill } from "react-icons/ri";
 import Academic from "./academic";
 import TechStack from "@/app/tech/page";
 
@@ -43,6 +26,7 @@ const HomeHero = () => {
                         width={180}
                         height={180}
                         className="rounded-full"
+                        priority
                     />
                 </div>
                 <div className="mb-4 w-full">
