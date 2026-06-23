@@ -12,12 +12,12 @@ export default function MainPage() {
       <div className="scroll-indicator" />
       <main className="w-full h-full">
         <HomePage />
-        <TechStack />
-        <AboutMe />
-        <Projects />
         <Contact />
+        {/* <TechStack />
+        <AboutMe />
+        <Projects /> */}
       </main>
     {/* </> */}
-    </LenisWrapper>
+      </LenisWrapper>
   );
 }

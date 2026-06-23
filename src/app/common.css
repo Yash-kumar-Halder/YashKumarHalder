@@ -39,10 +39,18 @@
 .bg-gradient-red-purple {
     background: linear-gradient(90deg, #ff0000b2, #ff0000, #6429ec, #2c2fdf, #0004ff);
 }
+.bg-gradient-nutral-black {
+    background: linear-gradient(90deg, #050505, #111111, #141414, #171717, #212121);
+}
 .border-gradient-red-purple {
     border-radius: 5px;               /* outer rounded corners */
     padding: 3px;                      /* border thickness */
     background: linear-gradient(90deg, #ff000030, #3336ea30);
+  }
+.border-gradient-nutral-black {
+    border-radius: 5px;               /* outer rounded corners */
+    padding: 3px;                      /* border thickness */
+    background: linear-gradient(90deg, #111111b2, #1c1c1c);
   }
   
   .border-gradient-red-purple > .content {

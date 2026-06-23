@@ -2,6 +2,7 @@ import ContactForm from "@/components/MyComponent/contact-form";
 import React from "react";
 import {Caveat_Brush} from "next/font/google"
 import { Metadata } from "next";
+import HorizontalScale from "@/components/MyComponent/horizontal-scale";
 
 const caveatBrush = Caveat_Brush({
     weight: "400",           // optional, default weight
@@ -43,8 +44,9 @@ export const metadata: Metadata = {
 
 const Contact = () => {
   return (
-    <section id="contact" className="min-h-[80vh] w-full flex flex-col gap-10 items-center justify-center md:px-[20%] sm:px-5 ">
-        <h1 className={`${caveatBrush.className} text-center px-5 text-[6vmin] leading-[7vmin] lg:text-4xl text-gradient-red-purple`} >Always open to new ideas and collaborations—drop me a message anytime.</h1>
+    <section id="contact" className="min-h-[50vh] max-w-5xl mx-auto border-x py-5">
+        <HorizontalScale className="relative mt-0" />
+        <h1 className={`text-2xl px-5 text-neutral-300 font-semibold border-y mt-5`} >Contact</h1>
       <ContactForm />
     </section>
   );

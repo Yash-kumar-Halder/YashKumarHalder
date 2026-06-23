@@ -33,20 +33,50 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-[600px] w-[90%] mx-auto flex flex-col items-center gap-4">
-        <div className="border-gradient-red-purple w-full">
-      <input name="name" placeholder="Name" value={form.name} onChange={handleChange} className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0" required />
-        </div>
-        <div className="border-gradient-red-purple w-full">
-
-      <input name="email" placeholder="Email" type="email" value={form.email} onChange={handleChange} className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0" required />
-        </div>
-        <div className="border-gradient-red-purple w-full">
-
-      <textarea name="message" placeholder="Message" value={form.message} onChange={handleChange} className="resize-none p-2 h-32 w-full bg-white dark:bg-black rounded-sm outline-0" required />
-        </div>
-      <button type="submit" className="bg-gradient-red-purple cursor-pointer w-fit px-12 text-white p-2 rounded hover:bg-blue-600 font-semibold">{isSending ? "Sending" : "Send"}</button>
-      {status && <p className="text-center">{status}</p>}
-    </form>
+      <form
+          onSubmit={handleSubmit}
+          className="w-[90%] mx-auto flex flex-col items-center gap-4"
+      >
+          <div className="w-full grid grid-cols-[1fr_1fr] gap-4 items-center mt-5">
+              <div className="border-gradient-nutral-black w-full">
+                  <input
+                      name="name"
+                      placeholder="Name"
+                      value={form.name}
+                      onChange={handleChange}
+                      className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0 text-neutral-300"
+                      required
+                  />
+              </div>
+              <div className="border-gradient-nutral-black w-full">
+                  <input
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0 text-neutral-300"
+                      required
+                  />
+              </div>
+          </div>
+          <div className="border-gradient-nutral-black w-full">
+              <textarea
+                  name="message"
+                  placeholder="Message"
+                  value={form.message}
+                  onChange={handleChange}
+                  className="resize-none p-2 h-32 w-full bg-white dark:bg-black rounded-sm outline-0 text-neutral-300"
+                  required
+              />
+          </div>
+          <button
+              type="submit"
+              className="bg-gradient-nutral-black cursor-pointer w-fit px-12 text-white p-2 rounded hover:bg-blue-600 font-semibold border border-accent"
+          >
+              {isSending ? "Sending" : "Send"}
+          </button>
+          {status && <p className="text-center">{status}</p>}
+      </form>
   );
 }

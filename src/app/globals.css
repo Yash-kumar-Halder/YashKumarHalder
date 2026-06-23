@@ -5,19 +5,24 @@
 	box-sizing: border-box;
 }
 
-  html, body, [data-lenis-scroll], * {
+  /* html, body, [data-lenis-scroll], * {
     scrollbar-gutter: stable;
+    scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none !important;
-  }
+  } */
   
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar,
-  [data-lenis-scroll]::-webkit-scrollbar,
-  *::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-  }
+  html,
+body {
+  scrollbar-gutter: stable;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
   
   
 

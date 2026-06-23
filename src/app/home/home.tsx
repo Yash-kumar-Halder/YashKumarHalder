@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import HorizontalScale from "@/components/MyComponent/horizontal-scale";
 import VerticalScale from "@/components/MyComponent/vertical-scale";
+import Experience from "@/components/MyComponent/experience";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -37,7 +38,7 @@ const HomePage = () => {
     return (
         <div
             id="home"
-            className={`${inter.className} w-full h-[95vh] overflow-hidden relative`}
+            className={`${inter.className} w-full min-h-[95vh] overflow-hidden relative`}
         >
             <div className="relative h-full">
                 {/* <HorizontalScale /> */}
@@ -46,6 +47,7 @@ const HomePage = () => {
                     <HomeHero />
                     {/* <VerticalScale /> */}
                 </div>
+                    <Experience />
                 {/* <HorizontalScale className="bottom-0" /> */}
             </div>
         </div>
