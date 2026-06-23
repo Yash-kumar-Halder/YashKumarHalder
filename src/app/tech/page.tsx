@@ -139,13 +139,13 @@ const TechStack = () => {
                 Tech Stack
             </h1>
             <div className="w-full">
-                <div className="grid grid-cols-[1fr_3fr] border-b">
-                    <div className="border-r border-dashed px-5">
-                        <h4 className="py-3 text-muted-foreground">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] border-b">
+                    <div className="md:border-r border-dashed px-5">
+                        <h4 className="pt-2 md:py-3 text-muted-foreground">
                             Languages
                         </h4>
                     </div>
-                    <div className="flex gap-3 px-5 py-3">
+                    <div className="flex flex-wrap gap-3 px-5 py-3">
                         <div className="flex gap-1 items-center border bg-neutral-700/40 px-2 py-1 rounded-sm text-neutral-200">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -188,9 +188,9 @@ const TechStack = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1fr_3fr] border-b">
-                    <div className="border-r border-dashed px-5">
-                        <h4 className="py-3 text-muted-foreground">Frontend</h4>
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] border-b">
+                    <div className="md:border-r border-dashed px-5">
+                        <h4 className="pt-2 md:py-3 text-muted-foreground">Frontend</h4>
                     </div>
                     <div className="flex flex-wrap space-x-3 gap-y-2 px-5 py-3">
                         <div className="flex gap-1 items-center border bg-neutral-700/40 px-2 py-1 rounded-sm text-neutral-200">
@@ -264,11 +264,11 @@ const TechStack = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1fr_3fr] border-b">
-                    <div className="border-r border-dashed px-5">
-                        <h4 className="py-3 text-muted-foreground">Backend</h4>
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] border-b">
+                    <div className="md:border-r border-dashed px-5">
+                        <h4 className="pt-2 md:py-3 text-muted-foreground">Backend</h4>
                     </div>
-                    <div className="flex gap-3 px-5 py-3">
+                    <div className="flex flex-wrap gap-3 px-5 py-3">
                         <div className="flex gap-1 items-center border bg-neutral-700/40 px-2 py-1 rounded-sm text-neutral-200">
                             <RiNodejsFill size={18} />
                             <span className="text-xs text-neutral-200 font-light">
@@ -277,11 +277,11 @@ const TechStack = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1fr_3fr] border-b">
-                    <div className="border-r border-dashed px-5">
-                        <h4 className="py-3 text-muted-foreground">Database</h4>
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] border-b">
+                    <div className="md:border-r border-dashed px-5">
+                        <h4 className="pt-2 md:py-3 text-muted-foreground">Database</h4>
                     </div>
-                    <div className="flex gap-3 px-5 py-3">
+                    <div className="flex flex-wrap gap-3 px-5 py-3">
                         <div className="flex gap-1 items-center border bg-neutral-700/40 px-2 py-1 rounded-sm text-neutral-200">
                             <IconBrandMongodb
                                 stroke={1.5}
@@ -300,13 +300,13 @@ const TechStack = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1fr_3fr] border-b">
-                    <div className="border-r border-dashed px-5">
-                        <h4 className="py-3 text-muted-foreground">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] border-b">
+                    <div className="md:border-r border-dashed px-5">
+                        <h4 className="pt-2 md:py-3 text-muted-foreground">
                             Tools & Technology
                         </h4>
                     </div>
-                    <div className="flex gap-3 px-5 py-3">
+                    <div className="flex flex-wrap gap-3 px-5 py-3">
                         <div className="flex gap-1 items-center border bg-neutral-700/40 px-2 py-1 rounded-sm text-neutral-200">
                             <IconBrandVscode
                                 stroke={1.5}

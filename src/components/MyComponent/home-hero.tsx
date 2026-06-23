@@ -47,15 +47,15 @@ const HomeHero = () => {
                 </div>
                 <div className="mb-4 w-full">
                     <div className="flex gap-1.5 items-center border-y w-full">
-                        <h1 className="text-2xl">YASH KUMAR HALDER </h1>
+                        <h1 className="text-lg md:text-2xl">YASH KUMAR HALDER </h1>
                         <Verified size={26} fill="#aaf" stroke="black" />{" "}
                     </div>
                     <h3 className="text-muted-foreground">Software Enginner</h3>
                 </div>
             </div>
             <HorizontalScale className="relative" />
-            <div className="grid grid-cols-[5fr_6fr] border-b">
-                <div className="space-y-4 h-fit p-5 border-r border-dashed">
+            <div className="grid grid-cols-1 md:grid-cols-[5fr_6fr] border-b">
+                <div className="space-y-4 h-fit p-5 border-b md:border-r border-dashed">
                     <div className="flex items-center gap-3">
                         <Code2
                             className="bg-neutral-800/70 p-1 rounded-md border text-neutral-300"
