@@ -24,7 +24,9 @@ const EducationAccordion = ({
                     onClick={() => setIsopen((prev) => !prev)}
                     className="flex gap-2 items-center text-neutral-300 cursor-pointer"
                 >
-                    <h2 className="text-neutral-300 select-none">~ {title}</h2>
+                    <h2 className="text-neutral-600 font-bold dark:text-neutral-300 select-none">
+                        ~ {title}
+                    </h2>
 
                     <button className="cursor-pointer">
                         <motion.div
@@ -34,7 +36,10 @@ const EducationAccordion = ({
                                 ease: "easeInOut",
                             }}
                         >
-                            <ChevronDown size={20} />
+                            <ChevronDown
+                                size={20}
+                                className="text-neutral-700 dark:text-neutral-300"
+                            />
                         </motion.div>
                     </button>
                 </div>
@@ -65,7 +70,7 @@ const EducationAccordion = ({
                                 animate={{ y: 0 }}
                                 exit={{ y: -10 }}
                                 transition={{ duration: 0.25 }}
-                                className="pt-3 pl-4 text-neutral-500 leading-relaxed"
+                                className="pt-3 pl-4 text-neutral-500 dark:text-neutral-500 leading-relaxed"
                             >
                                 {description}
                             </motion.p>

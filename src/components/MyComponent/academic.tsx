@@ -7,12 +7,12 @@ const Academic = () => {
         <div className="w-full">
             <HorizontalScale className="relative" />
             <div className="w-full py-5">
-                <h1 className="border-y px-5 text-2xl text-neutral-200">
+                <h1 className="border-y px-5 text-2xl text-neutral-700 dark:text-neutral-100 font-bold">
                     Academic
                 </h1>
-                <div className="border-b" >
+                <div className="border-b">
                     <div className="flex gap-2 items-start px-2 py-3 pb-2 border-b border-dashed border-neutral-600 w-fit ml-5">
-                        <GraduationCap className="p-0.5 border rounded-sm border-r-neutral-600 bg-neutral-800 text-neutral-300" />
+                        <GraduationCap className="p-0.5 border rounded-sm border-r-neutral-600 bg-neutral-800 text-white dark:text-neutral-300" />
                         <div>
                             <h3 className="">
                                 Diploma in Computer Science & Technology
@@ -25,11 +25,9 @@ const Academic = () => {
                         description="I successfully completed my Diploma in Computer Science & Technology in 2026. During my studies, I built a strong foundation in programming, web development, database management, and problem-solving."
                     />
                     <div className="flex gap-2 items-start px-2 py-3 pb-2 border-b border-dashed border-neutral-600 w-fit ml-5">
-                        <GraduationCap className="p-0.5 border rounded-sm border-r-neutral-600 bg-neutral-800 text-neutral-300" />
+                        <GraduationCap className="p-0.5 border rounded-sm border-r-neutral-600 bg-neutral-800 text-white dark:text-neutral-300" />
                         <div>
-                            <h3 className="">
-                                Higher Secondary
-                            </h3>
+                            <h3 className="">Higher Secondary</h3>
                         </div>
                     </div>
                     <EducationAccordion

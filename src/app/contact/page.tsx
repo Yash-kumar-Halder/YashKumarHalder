@@ -46,8 +46,9 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-[50vh] max-w-5xl mx-auto border-x py-5">
         <HorizontalScale className="relative mt-0" />
-        <h1 className={`text-2xl px-5 text-neutral-300 font-semibold border-y mt-5`} >Contact</h1>
+        <h1 className={`text-2xl px-5 text-neutral-600 dark:text-neutral-300 font-bold border-y mt-5`} >Contact</h1>
       <ContactForm />
+      <HorizontalScale className="relative mt-5" />
     </section>
   );
 };

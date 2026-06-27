@@ -44,7 +44,7 @@ export default function ContactForm() {
                       placeholder="Name"
                       value={form.name}
                       onChange={handleChange}
-                      className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0 text-neutral-300"
+                      className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0 dark:text-neutral-300 font-semibold"
                       required
                   />
               </div>
@@ -55,7 +55,7 @@ export default function ContactForm() {
                       type="email"
                       value={form.email}
                       onChange={handleChange}
-                      className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0 text-neutral-300"
+                      className="p-2 w-full bg-white dark:bg-black rounded-sm outline-0 dark:text-neutral-300 font-semibold"
                       required
                   />
               </div>
@@ -66,7 +66,7 @@ export default function ContactForm() {
                   placeholder="Message"
                   value={form.message}
                   onChange={handleChange}
-                  className="resize-none p-2 h-32 w-full bg-white dark:bg-black rounded-sm outline-0 text-neutral-300"
+                  className="resize-none p-2 h-32 w-full bg-white dark:bg-black rounded-sm outline-0 dark:text-neutral-300 font-semibold"
                   required
               />
           </div>

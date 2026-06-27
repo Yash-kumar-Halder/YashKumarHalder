@@ -26,7 +26,7 @@ const ExperienceAccordion = ({
                     onClick={() => setIsopen((prev) => !prev)}
                     className="flex gap-2 items-center text-neutral-300 cursor-pointer"
                 >
-                    <h2 className="text-neutral-300 select-none">~ {title}</h2>
+                    <h2 className="text-neutral-600 font-bold dark:text-neutral-300 select-none">~ {title}</h2>
 
                     <button className="cursor-pointer">
                         <motion.div
@@ -36,7 +36,7 @@ const ExperienceAccordion = ({
                                 ease: "easeInOut",
                             }}
                         >
-                            <ChevronDown size={20} />
+                            <ChevronDown size={20} className="text-neutral-700 dark:text-neutral-300" />
                         </motion.div>
                     </button>
                 </div>
